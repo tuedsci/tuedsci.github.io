@@ -1,0 +1,42 @@
+baseURL: "https://tuedsci.github.io"
+languageCode: "en-us"
+title: "Tue Nguyen"
+theme: "tuedsci"
+paginate: 3
+params:
+  subtitle: "MSc in Data Science"
+  menu:
+    - name: "Home"
+      url: "/"
+    - name: "CV"
+      url: "/cv"
+    - name: "Tutorials"
+      url: "/tutorials"
+
+  social:
+    - name: "Email"
+      url: "mailto:tuedsci@gmail.com"
+      fa: "far fa-envelope"
+    - name: "GitHub"
+      url: "https://github.com/tuedsci"
+      fa: "fab fa-github"
+    - name: "LinkedIn"
+      url: "https://www.linkedin.com/in/tuedsci/"
+      fa: "fab fa-linkedin"
+
+  portrait:
+    name: "Tue Nguyen"
+    title: "MSc in Data Science"
+    org: "University of Milan"
+    location: "Milan, Italy"
+markup:
+  highlight:
+    codeFences: true
+    lineNos: false
+    noClasses: false
+    tabWidth: 4
+
+
+
+
+

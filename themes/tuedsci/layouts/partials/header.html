@@ -1,0 +1,18 @@
+<header id="header" class="clearfix">
+    <div id="site-info">
+        <h1 id="site-title">
+            <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        </h1>
+        <p id="site-subtitle">{{ .Site.Params.subtitle}}</p>
+    </div>
+
+    {{ with .Site.Params.menu }}
+    <nav>
+        <ul>
+            {{ range . }}
+            <li><a href="{{ .url | relURL }}">{{ .name }}</a></li>
+            {{ end }}
+        </ul>
+    </nav>
+    {{ end }}
+</header>

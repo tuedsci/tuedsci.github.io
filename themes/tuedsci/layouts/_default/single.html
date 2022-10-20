@@ -1,0 +1,22 @@
+{{ define "main" }}
+<main id="main" class="post" role="main">
+    {{ partial "post-datetime" . }}
+
+    <article>
+        <h1>{{ .Title }}</h1>
+        <div>
+            {{ .Content }}
+        </div>
+        {{ with .Params.tags }}
+        <div>
+            <ul id="tags">
+                {{ range . }}
+                <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ .
+                    }}</a></li>
+                {{ end }}
+            </ul>
+        </div>
+        {{ end }}
+    </article>
+</main>
+{{ end }}

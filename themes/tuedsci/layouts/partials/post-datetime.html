@@ -1,0 +1,8 @@
+<div class="post-datetime">
+    <time>
+        {{ if .Date }}
+        {{ .Date.Format "Jan 1, 2006" }} |
+        {{ end }}
+        {{ .ReadingTime }} minute{{ if (ne .ReadingTime 1) }}s{{ end }} to read
+    </time>
+</div>

@@ -1,0 +1,405 @@
+/****************************************
+* GENERAL
+****************************************/
+html {
+    font-size: 100%;
+}
+
+body {
+    background: #fff;
+    font: 18px/1.4 Helvetica, Arial, sans-serif;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    font-weight: bold;
+    background-color: #ddd;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+p {
+    margin: 15px 0;
+}
+
+a {
+    color: #4d8dc9;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover, a:active {
+    color: #4d8dc9;
+}
+
+ul, ol {
+    margin: 15px 0;
+    padding-left: 30px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ol ul, ul ol, ul ul, ol ol {
+    margin: 0;
+}
+
+ul ul, ol ul {
+    list-style-type: circle;
+}
+
+em, i {
+    font-style: italic;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+}
+
+/****************************************
+* HEADING
+****************************************/
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 1em 0 15px;
+    padding: 0;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: inherit;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.15em;
+    color: #666;
+}
+
+h4 {
+    font-size: 1em;
+    color: #666;
+}
+
+::selection {
+    color: #000;
+    background: #ccc;
+}
+
+/****************************************
+* LAYOUT
+****************************************/
+.container {
+    margin: 0 auto;
+    max-width: 740px;
+    padding: 0 10px;
+    width: 100%;
+}
+
+#main {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/****************************************
+* HEADER
+****************************************/
+#header {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* SITE INFO */
+#site-info {
+    float: left;
+}
+
+/* SITE TITLE */
+#site-title {
+    margin: 0;
+    color: #333;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+/* SITE SUBTITLE */
+#site-subtitle {
+    margin: 0;
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* SITE NAV */
+nav {
+    float: right;
+    font-size: 1em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    margin-left: 20px;
+    color: #333;
+    display: inline-block;
+    text-align: right;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/****************************************
+* MEDIA SCREEN
+****************************************/
+@media screen and (max-width: 640px) {
+    /* General */
+    h1, h2, h3, h4, h5, h6 {
+        line-height: 1.4;
+    }
+
+    /* HEADER */
+    #site-info {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #site-title {
+        text-align: center;
+    }
+
+    #site-subtitle {
+        margin: 3px 0;
+    }
+
+    nav {
+        float: none;
+        margin-top: 9px;
+        display: block;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    /* INDEX PAGE */
+    #portrait {
+        float: none;
+        max-width: 100%;
+        margin: 15px 0;
+    }
+
+    #portrait img {
+        max-width: 225px;
+    }
+}
+
+/****************************************
+* POSTS
+****************************************/
+.post-list > .post {
+    padding-bottom: 2em;
+    border-bottom: 1px solid #eee;
+}
+
+.post-list > .post:last-child {
+    padding-bottom: 1em;
+    border-bottom: none;
+}
+
+.post blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid #666;
+    padding: 0.1em 1em;
+    color: #666;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.post .comments {
+    margin-top: 10px;
+}
+
+.post .read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+    display: block;
+}
+
+/****************************************
+* FOOTER
+****************************************/
+.footer-wrapper {
+    margin-top: auto;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #eee;
+}
+
+footer {
+    padding: 15px 0;
+    text-align: center;
+}
+
+/****************************************
+* INDEX PAGES
+****************************************/
+/* PORTRAIT */
+#portrait {
+    float: right;
+    max-width: 225px;
+    margin: 15px 0 15px 1em;
+    text-align: center;
+}
+
+#portrait h2, #portrait h3, #portrait h4 {
+    text-align: center;
+    font-weight: 300;
+    margin: 7px 0;
+}
+
+#portrait h3, #portrait h4, #portrait a {
+    color: rgba(0, 0, 0, .54);
+}
+
+#portrait h4 i {
+    display: inline-block;
+    padding-right: 7px;
+}
+
+/* ICONS */
+.icons ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.icons ul li {
+    display: inline-block;
+}
+
+.icons a {
+    display: inline-block;
+}
+
+.icons i {
+    display: inline-block;
+    font-size: 1.75rem;
+    text-align: center;
+    line-height: 25px;
+    margin: 0 5px;
+}
+
+#portrait .icons a:hover {
+    color: #4d8dc9;
+}
+
+/****************************************
+* TAGS
+****************************************/
+#tags {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#tags li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+/****************************************
+* SYNTAX HIGHLIGHTING
+****************************************/
+pre, code, kbd, samp {
+    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    background: #f8f8f8;
+}
+
+code {
+    padding: 0 5px;
+    font-size: 0.9em;
+    border-radius: 3px;
+}
+
+pre {
+    margin: 1em 0;
+    padding: 0.5em 0.6em;
+}
+
+pre code {
+    padding: 0;
+    border-radius: 0;
+}
+
+/****************************************
+* OTHER
+****************************************/
+.date {
+    font-style: italic;
+    color: #666;
+}
+
+.paginator {
+    margin-top: 1em;
+    text-align: center;
+}

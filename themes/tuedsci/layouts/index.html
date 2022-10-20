@@ -1,0 +1,28 @@
+{{ define "main" }}
+<main id="main" role="main" class="clearfix">
+    <!-- <h1>About me</h1> -->
+    <section id="portrait">
+        <img src="/images/portrait.png" alt="Tue Nguyen">
+        <h2>{{ .Site.Params.portrait.name }}</h2>
+        <h3>{{ .Site.Params.portrait.title }}</h3>
+        <h4><i class="fas fa-map-marker-alt"></i>{{
+            .Site.Params.portrait.location }}</h4>
+        {{ partial "icons" . }}
+    </section>
+
+    <div id="about">
+        <p>I am a graduate student in <a
+                href="https://dse.cdl.unimi.it/en">Data Science for
+            Economics</a> at the University of Milan, Italy. Before this
+            master’s, I worked in the fintech industry for 4.5 years in three
+            roles: data specialist, research engineer, and data scientist.</p>
+        <p>I expect to graduate in August 2024, and I plan to join the industry
+            and work as a data scientist after graduation. For more details
+            about me, please see my <a href="/cv">CV</a>.</p>
+        <p>I also spend my free time writing tutorials about technical topics
+            such as programming, databases, and data science. Please feel free
+            to check them out <a href="/tutorials">here</a></p>
+    </div>
+    </p>
+</main>
+{{ end }}

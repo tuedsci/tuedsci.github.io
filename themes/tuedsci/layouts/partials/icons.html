@@ -1,0 +1,9 @@
+{{ with .Site.Params.social }}
+<div class="icons">
+    <ul>
+        {{ range . }}
+        <li><a href="{{ .url | absURL }}"><i class="{{ .fa }}"></i></a></li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}
