@@ -1,0 +1,24 @@
+/****************************************
+* JUST FOR BACKUP PURPOSES
+****************************************/
+/* SYNTAX HIGHLIGHTING */
+pre, code, kbd, samp {
+    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    background: #f8f8f8;
+}
+
+code {
+    padding: 0 5px;
+    font-size: 0.9em;
+    border-radius: 3px;
+}
+
+pre {
+    margin: 1em 0;
+    padding: 0.5em 0.6em;
+}
+
+pre code {
+    padding: 0;
+    border-radius: 0;
+}

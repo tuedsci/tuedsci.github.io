@@ -12,6 +12,8 @@ params:
       url: "/cv"
     - name: "Tutorials"
       url: "/tutorials"
+    - name: "Blog"
+      url: "/blog"
 
   social:
     - name: "Email"

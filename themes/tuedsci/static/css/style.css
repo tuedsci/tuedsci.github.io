@@ -219,7 +219,7 @@ nav a {
 
 .post blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid #666;
+    border-left: 5px solid #ddd;
     padding: 0.1em 1em;
     color: #666;
     font-size: 22px;
@@ -233,7 +233,7 @@ nav a {
 .post .read-more {
     text-transform: uppercase;
     font-size: 15px;
-    display: block;
+    display: inline-block;
 }
 
 /****************************************
@@ -269,7 +269,7 @@ footer {
 }
 
 #portrait h3, #portrait h4, #portrait a {
-    color: rgba(0, 0, 0, .54);
+    color: #666;
 }
 
 #portrait h4 i {
@@ -320,30 +320,6 @@ footer {
 }
 
 /****************************************
-* SYNTAX HIGHLIGHTING
-****************************************/
-pre, code, kbd, samp {
-    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    background: #f8f8f8;
-}
-
-code {
-    padding: 0 5px;
-    font-size: 0.9em;
-    border-radius: 3px;
-}
-
-pre {
-    margin: 1em 0;
-    padding: 0.5em 0.6em;
-}
-
-pre code {
-    padding: 0;
-    border-radius: 0;
-}
-
-/****************************************
 * OTHER
 ****************************************/
 .date {
@@ -354,6 +330,26 @@ pre code {
 .paginator {
     margin-top: 1em;
     text-align: center;
+}
+
+/****************************************
+* CODE HIGHLIGHT
+****************************************/
+pre, code, kbd, samp {
+    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+code {
+    background: #eee;
+    padding: 1px 3px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+pre code {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
 }
 
 /****************************************

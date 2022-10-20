@@ -86,14 +86,14 @@ in the `Customer` table.
 Here is how we talk to PostgreSQL.
 
 ```sql
-select *
-from Customer 
-limit 5
+SELECT *
+FROM Customer 
+LIMIT 5
 ```
 
 And here is how we talk to SQL Server.
 
 ```sql
-select top 5 *
-from Customer
+SELECT TOP 5 *
+FROM Customer
 ```

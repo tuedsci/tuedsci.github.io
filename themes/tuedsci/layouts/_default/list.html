@@ -10,7 +10,7 @@
     {{ end }}
 
     <div class="post-list">
-        {{ range (where .Paginator.Pages "Type" "blog") }}
+        {{ range .Paginator.Pages }}
         {{ .Render "summary" }}
         {{ end }}
     </div>

@@ -7,14 +7,12 @@
 	<title>{{ .Title }}</title>
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-	<link rel="stylesheet" href="{{ "css/reset.css" | relURL }}">
-	<link rel="stylesheet" href="{{ "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"}}">
-	<link rel="stylesheet" href="{{ "css/code.css" | relURL }}">
-	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 	{{ with .OutputFormats.Get "RSS" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{- end }}
 
+	<!-- Custom CSS -->
+	{{ partial "custom-css" . }}
 	<!-- Katex -->
 	{{ if .Params.math }}{{ partial "katex.html" . }}{{ end }}
 </head>
@@ -24,5 +22,6 @@
 	<div class="footer-wrapper">
 		<div class="container">{{ partial "footer" . }}</div>
 	</div>
+	{{ partial "custom-script" . }}
 </body>
 </html>
