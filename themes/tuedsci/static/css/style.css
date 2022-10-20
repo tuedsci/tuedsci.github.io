@@ -203,54 +203,6 @@ nav a {
     letter-spacing: 1px;
 }
 
-/****************************************
-* MEDIA SCREEN
-****************************************/
-@media screen and (max-width: 640px) {
-    /* General */
-    h1, h2, h3, h4, h5, h6 {
-        line-height: 1.4;
-    }
-
-    /* HEADER */
-    #site-info {
-        float: none;
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    #site-title {
-        text-align: center;
-    }
-
-    #site-subtitle {
-        margin: 3px 0;
-    }
-
-    nav {
-        float: none;
-        margin-top: 9px;
-        display: block;
-        font-size: 16px;
-        text-align: center;
-    }
-
-    nav a {
-        margin: 0 10px;
-    }
-
-    /* INDEX PAGE */
-    #portrait {
-        float: none;
-        max-width: 100%;
-        margin: 15px 0;
-    }
-
-    #portrait img {
-        max-width: 225px;
-    }
-}
 
 /****************************************
 * POSTS
@@ -402,4 +354,53 @@ pre code {
 .paginator {
     margin-top: 1em;
     text-align: center;
+}
+
+/****************************************
+* MEDIA SCREEN
+****************************************/
+@media screen and (max-width: 640px) {
+    /* General */
+    h1, h2, h3, h4, h5, h6 {
+        line-height: 1.4;
+    }
+
+    /* HEADER */
+    #site-info {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #site-title {
+        text-align: center;
+    }
+
+    #site-subtitle {
+        margin: 3px 0;
+    }
+
+    nav {
+        float: none;
+        margin-top: 9px;
+        display: block;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    /* INDEX PAGE */
+    #portrait {
+        float: none;
+        max-width: 100%;
+        margin: 15px 0;
+    }
+
+    #portrait img {
+        max-width: 225px;
+    }
 }
