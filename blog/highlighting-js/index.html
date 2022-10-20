@@ -1,0 +1,93 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>Syntax highlighting with highlight.js</title><link rel=stylesheet href=/css/reset.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/atom-one-dark.min.css><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js></script>
+<script>hljs.highlightAll()</script><link rel=stylesheet href=/css/style.css></head><body><div class=container><header id=header class=clearfix><div id=site-info><h1 id=site-title><a href=https://tuedsci.github.io>Tue Nguyen</a></h1><p id=site-subtitle>MSc in Data Science</p></div><nav><ul><li><a href=/>Home</a></li><li><a href=/cv>CV</a></li><li><a href=/tutorials>Tutorials</a></li><li><a href=/blog>Blog</a></li></ul></nav></header></div><div class=container><main id=main class=post role=main><div class=post-datetime><time>Oct 10, 2022 |
+2 minutes to read</time></div><article><h1>Syntax highlighting with highlight.js</h1><div><p>The <code>highlighting.js</code> library is a comprehensive project that offers a rich
+collection of syntax highlighting styles (both dark and light themes). You can
+easily incorporate it into your website with just three lines of code. This
+post will walk you through all the steps as well as give some demos.</p><h2 id=setup>Setup</h2><p>Step 1: open your <code>.html</code> layout file</p><p>Step 2: put the following code in the <code>&lt;head>&lt;/head></code> section</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>link</span> <span class=na>rel</span><span class=o>=</span><span class=s>&#34;stylesheet&#34;</span>
+</span></span><span class=line><span class=cl>      <span class=na>href</span><span class=o>=</span><span class=s>&#34;//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/&lt;style-name&gt;.min.css&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>script</span> <span class=na>src</span><span class=o>=</span><span class=s>&#34;//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js&#34;</span><span class=p>&gt;&lt;/</span><span class=nt>script</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>script</span><span class=p>&gt;</span><span class=nx>hljs</span><span class=p>.</span><span class=nx>highlightAll</span><span class=p>();&lt;/</span><span class=nt>script</span><span class=p>&gt;</span>
+</span></span></code></pre></div><p>Note: you should visit <a href=https://highlightjs.org/download/>here</a> to get the
+latest version</p><p>Step 3: take a look at the demo <a href=https://highlightjs.org/static/demo/>here</a> to
+choose the want you like the most</p><p>Step 4: go to
+the <a href=https://github.com/highlightjs/highlight.js/tree/main/src/styles>official GitHub repo</a>
+to get the correct name for the style you want in step 3</p><p>Step 5: replace <code>&lt;style-name></code> in the code snippet in step 2 with the style
+name found in the official GitHub repo, save, and enjoy the result</p><h2 id=recommendation>Recommendation</h2><p>The collection is huge, and I did not have time to look at all the styles.
+However, here are the styles that I found most attractive.</p><ul><li>Light themes: <code>atom-one-light</code></li><li>Dark themes: <code>agate</code>, <code>atom-one-dark</code>, <code>base16/decaf</code>, <code>base16/danqing</code>, <code>base16/eighties</code></li></ul><h2 id=demo>Demo</h2><h3 id=sql-code>SQL code</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-sql data-lang=sql><span class=line><span class=cl><span class=k>SELECT</span><span class=w> 
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>C</span><span class=p>.</span><span class=n>CustomerID</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=k>C</span><span class=p>.</span><span class=n>FirstName</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>CA</span><span class=p>.</span><span class=n>AddressID</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>CA</span><span class=p>.</span><span class=n>AddressType</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>A</span><span class=p>.</span><span class=n>AddressID</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>CONCAT_WS</span><span class=p>(</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=s1>&#39;, &#39;</span><span class=p>,</span><span class=w> </span><span class=n>A</span><span class=p>.</span><span class=n>AddressLine1</span><span class=p>,</span><span class=w> </span><span class=n>A</span><span class=p>.</span><span class=n>AddressLine2</span><span class=p>,</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>A</span><span class=p>.</span><span class=n>City</span><span class=p>,</span><span class=w> </span><span class=n>A</span><span class=p>.</span><span class=n>StateProvince</span><span class=p>,</span><span class=w> </span><span class=n>A</span><span class=p>.</span><span class=n>CountryRegion</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>)</span><span class=w> </span><span class=k>AS</span><span class=w> </span><span class=n>FullAdress</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>-- Join C and CA
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>FROM</span><span class=w> </span><span class=n>Customer</span><span class=w> </span><span class=k>AS</span><span class=w> </span><span class=k>C</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>LEFT</span><span class=w> </span><span class=k>JOIN</span><span class=w> </span><span class=n>CustomerAddress</span><span class=w> </span><span class=k>AS</span><span class=w> </span><span class=n>CA</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>ON</span><span class=w> </span><span class=k>C</span><span class=p>.</span><span class=n>CustomerID</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>CA</span><span class=p>.</span><span class=n>CustomerID</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=c1>-- Join CA and A
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=k>LEFT</span><span class=w> </span><span class=k>JOIN</span><span class=w> </span><span class=n>Address</span><span class=w> </span><span class=k>as</span><span class=w> </span><span class=n>A</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=k>ON</span><span class=w> </span><span class=n>CA</span><span class=p>.</span><span class=n>AddressID</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>A</span><span class=p>.</span><span class=n>AddressID</span><span class=w>
+</span></span></span></code></pre></div><h3 id=python-code>Python code</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>class</span> <span class=nc>Point</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=s2>&#34;&#34;&#34;
+</span></span></span><span class=line><span class=cl><span class=s2>    Represents a point in 2D space
+</span></span></span><span class=line><span class=cl><span class=s2>    &#34;&#34;&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>def</span> <span class=fm>__init__</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span> <span class=n>x</span><span class=p>:</span> <span class=nb>float</span> <span class=o>=</span> <span class=mi>0</span><span class=p>,</span> <span class=n>y</span><span class=p>:</span> <span class=nb>float</span> <span class=o>=</span> <span class=mi>0</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=kc>None</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;&#34;&#34;
+</span></span></span><span class=line><span class=cl><span class=s2>        Init the position of a new point
+</span></span></span><span class=line><span class=cl><span class=s2>        :param x: x-coord
+</span></span></span><span class=line><span class=cl><span class=s2>        :param y: y-coord
+</span></span></span><span class=line><span class=cl><span class=s2>        &#34;&#34;&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=bp>self</span><span class=o>.</span><span class=n>x</span> <span class=o>=</span> <span class=n>x</span>
+</span></span><span class=line><span class=cl>        <span class=bp>self</span><span class=o>.</span><span class=n>y</span> <span class=o>=</span> <span class=n>y</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>def</span> <span class=nf>move</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span> <span class=n>dx</span><span class=p>:</span> <span class=nb>float</span><span class=p>,</span> <span class=n>dy</span><span class=p>:</span> <span class=nb>float</span><span class=p>)</span> <span class=o>-&gt;</span> <span class=kc>None</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;&#34;&#34;
+</span></span></span><span class=line><span class=cl><span class=s2>        Moves a point
+</span></span></span><span class=line><span class=cl><span class=s2>        :param dx: change in x-coord
+</span></span></span><span class=line><span class=cl><span class=s2>        :param dy: change in y-coord
+</span></span></span><span class=line><span class=cl><span class=s2>        :return:
+</span></span></span><span class=line><span class=cl><span class=s2>        &#34;&#34;&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=bp>self</span><span class=o>.</span><span class=n>x</span> <span class=o>+=</span> <span class=n>dx</span>
+</span></span><span class=line><span class=cl>        <span class=bp>self</span><span class=o>.</span><span class=n>y</span> <span class=o>+=</span> <span class=n>dy</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Init two points</span>
+</span></span><span class=line><span class=cl><span class=n>p1</span> <span class=o>=</span> <span class=n>Point</span><span class=p>()</span>
+</span></span><span class=line><span class=cl><span class=n>p2</span> <span class=o>=</span> <span class=n>Point</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>p1</span><span class=o>.</span><span class=n>x</span><span class=p>,</span> <span class=n>p1</span><span class=o>.</span><span class=n>y</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>p2</span><span class=o>.</span><span class=n>x</span><span class=p>,</span> <span class=n>p2</span><span class=o>.</span><span class=n>y</span><span class=p>)</span>
+</span></span></code></pre></div><h3 id=r-code>R code</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-r data-lang=r><span class=line><span class=cl><span class=nf>library</span><span class=p>(</span><span class=n>tidyverse</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>models</span> <span class=o>&lt;-</span> <span class=n>tibble</span><span class=o>::</span><span class=nf>tribble</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=o>~</span><span class=n>model_name</span><span class=p>,</span>    <span class=o>~</span> <span class=n>formula</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s>&#34;length-width&#34;</span><span class=p>,</span> <span class=n>Sepal.Length</span> <span class=o>~</span> <span class=n>Petal.Width</span> <span class=o>+</span> <span class=n>Petal.Length</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=s>&#34;interaction&#34;</span><span class=p>,</span>  <span class=n>Sepal.Length</span> <span class=o>~</span> <span class=n>Petal.Width</span> <span class=o>*</span> <span class=n>Petal.Length</span>
+</span></span><span class=line><span class=cl><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>iris</span> <span class=o>%&gt;%</span> 
+</span></span><span class=line><span class=cl>    <span class=nf>nest_by</span><span class=p>(</span><span class=n>Species</span><span class=p>)</span> <span class=o>%&gt;%</span> 
+</span></span><span class=line><span class=cl>    <span class=nf>left_join</span><span class=p>(</span><span class=n>models</span><span class=p>,</span> <span class=n>by</span> <span class=o>=</span> <span class=nf>character</span><span class=p>())</span> <span class=o>%&gt;%</span> 
+</span></span><span class=line><span class=cl>    <span class=nf>rowwise</span><span class=p>(</span><span class=n>Species</span><span class=p>,</span> <span class=n>model_name</span><span class=p>)</span> <span class=o>%&gt;%</span> 
+</span></span><span class=line><span class=cl>    <span class=nf>mutate</span><span class=p>(</span><span class=n>model</span> <span class=o>=</span> <span class=nf>list</span><span class=p>(</span><span class=nf>lm</span><span class=p>(</span><span class=n>formula</span><span class=p>,</span> <span class=n>data</span> <span class=o>=</span> <span class=n>data</span><span class=p>)))</span> <span class=o>%&gt;%</span> 
+</span></span><span class=line><span class=cl>    <span class=nf>summarise</span><span class=p>(</span><span class=n>broom</span><span class=o>::</span><span class=nf>glance</span><span class=p>(</span><span class=n>model</span><span class=p>))</span>
+</span></span></code></pre></div><h3 id=yaml>YAML</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-yaml data-lang=yaml><span class=line><span class=cl>- <span class=nt>john</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>John Doe</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>job</span><span class=p>:</span><span class=w> </span><span class=l>Web developer</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>skills</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span>- <span class=l>Python</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span>- <span class=l>Java</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span>- <span class=nt>jane</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>Jane Smith</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>job</span><span class=p>:</span><span class=w> </span><span class=l>Data scientist</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=nt>skills</span><span class=p>:</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span>- <span class=l>Python</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span>- <span class=l>R</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>      </span>- <span class=l>Scala</span><span class=w>
+</span></span></span></code></pre></div></div></article></main></div><div class=footer-wrapper><div class=container><footer><p>&copy; 2022 <a href=https://tuedsci.github.io>Tue Nguyen</a></p></footer></div></div></body></html>
