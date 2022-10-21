@@ -68,8 +68,10 @@ your post.
 
 ```yaml
 # your-post.md
+---
 title: Your post title
 math: true
+---
 ```
 
 Then in your post, use `$` for inline Latex and `$$` for block Latex.

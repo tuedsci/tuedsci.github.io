@@ -2,7 +2,9 @@
 title: Deploy a Hugo website as a GitHub page
 date: 2022-10-20
 ---  
-This post summarizes the key steps to create and deploy a Hugo website as a (free) GitHub page. For the detail instructions, please visit the suggested links
+This post summarizes the key steps to create and deploy a Hugo website as a (
+free) GitHub page. For the detail instructions, please visit the suggested
+links
 or Google accordingly.
 <!--more-->
 
@@ -73,6 +75,7 @@ guideline [here](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
 for the most updated content
 
 ```yaml
+# .github/workflows/gh-pages.yml
 name: github pages
 
 on:
