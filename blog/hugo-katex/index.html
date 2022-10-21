@@ -43,8 +43,10 @@ of <code>layouts/_default/baseof.html</code></p><div class=highlight><pre tabind
 </span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>head</span><span class=p>&gt;</span>
 </span></span></code></pre></div><h2 id=config-your-posts>Config your posts</h2><p>To enable Katex rendering, you should set <code>math: true</code> in the front matter of
 your post.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-yaml data-lang=yaml><span class=line><span class=cl><span class=c># your-post.md</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=nn>---</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>title</span><span class=p>:</span><span class=w> </span><span class=l>Your post title</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>math</span><span class=p>:</span><span class=w> </span><span class=kc>true</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=nn>---</span><span class=w>
 </span></span></span></code></pre></div><p>Then in your post, use <code>$</code> for inline Latex and <code>$$</code> for block Latex.</p><p>To enable Katex globally, set <code>math: true</code> in your website config.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-yaml data-lang=yaml><span class=line><span class=cl><span class=c># config.yaml</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>params</span><span class=p>:</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>  </span><span class=nt>math</span><span class=p>:</span><span class=w> </span><span class=kc>true</span><span class=w>

@@ -1,6 +1,8 @@
 <!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>Deploy a Hugo website as a GitHub page</title><link rel=stylesheet href=/css/reset.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/atom-one-dark.min.css><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js></script>
 <script>hljs.highlightAll()</script><link rel=stylesheet href=/css/style.css></head><body><div class=container><header id=header class=clearfix><div id=site-info><h1 id=site-title><a href=https://tuedsci.github.io>Tue Nguyen</a></h1><p id=site-subtitle>MSc in Data Science</p></div><nav><ul><li><a href=/>Home</a></li><li><a href=/cv>CV</a></li><li><a href=/tutorials>Tutorials</a></li><li><a href=/blog>Blog</a></li></ul></nav></header></div><div class=container><main id=main class=post role=main><div class=post-datetime><time>Oct 20, 2022 |
-3 minutes to read</time></div><article><h1>Deploy a Hugo website as a GitHub page</h1><div><p>This post summarizes the key steps to create and deploy a Hugo website as a (free) GitHub page. For the detail instructions, please visit the suggested links
+3 minutes to read</time></div><article><h1>Deploy a Hugo website as a GitHub page</h1><div><p>This post summarizes the key steps to create and deploy a Hugo website as a (
+free) GitHub page. For the detail instructions, please visit the suggested
+links
 or Google accordingly.</p><h2 id=create-a-website>Create a website</h2><p>I assume that you already created a deployable Hugo website on your local
 machine. If not, please visit the Hugo website and follow
 the <a href=https://gohugo.io/getting-started/quick-start/>instructions here</a>.
@@ -17,7 +19,8 @@ be <code>&lt;username>.github.io</code></p><h2 id=sync-the-local-and-remote-repo
 </span></span><span class=line><span class=cl>git push -U origin main
 </span></span></code></pre></div><h2 id=build-hugo-with-github-actions>Build Hugo with GitHub actions</h2><p>Step 1: create the following file <code>.github/workflows/gh-pages.yml</code></p><p>Step 2: paste the code for <code>actions-hugo</code> into the newly created file</p><p>It should look like the snippet below, but please check out Hugo&rsquo;s official
 guideline <a href=https://gohugo.io/hosting-and-deployment/hosting-on-github/>here</a>
-for the most updated content</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-yaml data-lang=yaml><span class=line><span class=cl><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>github pages</span><span class=w>
+for the most updated content</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-yaml data-lang=yaml><span class=line><span class=cl><span class=c># .github/workflows/gh-pages.yml</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>github pages</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w></span><span class=nt>on</span><span class=p>:</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>  </span><span class=nt>push</span><span class=p>:</span><span class=w>
