@@ -37,7 +37,9 @@ markup:
     lineNos: false
     noClasses: false
     tabWidth: 4
-
+  goldmark:
+    renderer:
+      unsafe: true
 
 
 

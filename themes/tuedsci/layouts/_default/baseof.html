@@ -13,8 +13,11 @@
 
 	<!-- Custom CSS -->
 	{{ partial "custom-css" . }}
+
 	<!-- Katex -->
-	{{ if .Params.math }}{{ partial "katex.html" . }}{{ end }}
+	{{ if or .Params.math .Site.Params.math }}
+	{{ partial "katex.html" . }}
+	{{ end }}
 </head>
 <body>
 	<div class="container">{{ partial "header" . }}</div>

@@ -1,9 +1,9 @@
 ---  
 title: Syntax highlighting with highlight.js
-date: 2022-10-20
+date: 2022-10-19
 ---  
 
-The `highlighting.js` library is a comprehensive project that offers a rich
+The `highlight.js` library is a comprehensive project that offers a rich
 collection of syntax highlighting styles (both dark and light themes). You can
 easily incorporate it into your website with just three lines of code. This
 post will walk you through all the steps as well as give some demos.
@@ -28,11 +28,11 @@ Note: you should visit [here](https://highlightjs.org/download/) to get the
 latest version
 
 Step 3: take a look at the demo [here](https://highlightjs.org/static/demo/) to
-choose the want you like the most
+choose the one you like the most
 
 Step 4: go to
 the [official GitHub repo](https://github.com/highlightjs/highlight.js/tree/main/src/styles)
-to get the correct name for the style you want in step 3
+to get the correct name for the style you chose in step 3
 
 Step 5: replace `<style-name>` in the code snippet in step 2 with the style
 name found in the official GitHub repo, save, and enjoy the result
@@ -125,7 +125,7 @@ iris %>%
     summarise(broom::glance(model))
 ```
 
-### YAML
+### YAML code
 
 ```yaml
 - john:

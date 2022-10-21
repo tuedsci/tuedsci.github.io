@@ -1,6 +1,6 @@
 ---  
 title: Deploy a Hugo website as a GitHub page
-date: 2022-10-19
+date: 2022-10-20
 ---  
 This post summarizes the key steps to create and deploy a Hugo website as a (free) GitHub page. For the detail instructions, please visit the suggested links
 or Google accordingly.
@@ -66,7 +66,7 @@ git push -U origin main
 
 Step 1: create the following file `.github/workflows/gh-pages.yml`
 
-Step 2: paste the code for `actions-hugo` into the newly created files
+Step 2: paste the code for `actions-hugo` into the newly created file
 
 It should look like the snippet below, but please check out Hugo's official
 guideline [here](https://gohugo.io/hosting-and-deployment/hosting-on-github/)

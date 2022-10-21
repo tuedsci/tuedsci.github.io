@@ -339,8 +339,12 @@ pre, code, kbd, samp {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+pre {
+    margin: 1em 0;
+}
+
 code {
-    background: #eee;
+    background: #e3e3e3;
     padding: 1px 3px;
     border-radius: 3px;
     font-size: 0.9em;

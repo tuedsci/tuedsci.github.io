@@ -3,4 +3,4 @@ title: Basic SQL course
 layout: page
 ---
 
-- [Lesson 1: What is SQL?](intro)
+- [Lesson 1: Introduction to SQL](intro)

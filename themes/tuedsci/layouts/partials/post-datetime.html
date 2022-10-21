@@ -1,8 +1,9 @@
 <div class="post-datetime">
     <time>
         {{ if .Date }}
-        {{ .Date.Format "Jan 1, 2006" }} |
+        {{ .Date.Format "Jan 2, 2006" }} |
         {{ end }}
-        {{ .ReadingTime }} minute{{ if (ne .ReadingTime 1) }}s{{ end }} to read
+        {{ $readTime := math.Round (div (countwords .Content) 150.0) }}
+        {{ $readTime }} minute{{ if (ne $readTime 1) }}s{{ end }} to read
     </time>
 </div>

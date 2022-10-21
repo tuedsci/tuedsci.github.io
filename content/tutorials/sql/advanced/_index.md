@@ -3,4 +3,4 @@ title: Advanced SQL course
 layout: page
 ---
 
-To be done
+To be updated
