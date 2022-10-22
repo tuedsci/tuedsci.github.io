@@ -9,15 +9,17 @@ Email: tuedsci@gmail.com
 Website: https://tuedsci.github.io
 Github: https://github.com/tuedsci
 LinkedIn: https://www.linkedin.com/in/tuedsci
-Education MSc in Data Science for Economics (2022 - 2024)
-at the University of Milan, Italy, with the Excellence Scholarship
-BSc in Finance-Banking (2012 - 2016)
-at Tan Tao University, Vietnam, with the TTU-ITA Excellence Scholarship
-Awards Excellence Scholarship (2022)
-by the University of Milan, Italy - Full ride</description></item><item><title>Introduction to Python</title><link>https://tuedsci.github.io/tutorials/python/basic/intro-python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tuedsci.github.io/tutorials/python/basic/intro-python/</guid><description>What is Python? Python is a general-purpose, interpreted, interactive, muti-paradigm, and high-level programming language.
+Education MSc in Data Science for Economics
+at the University of Milan, Italy (2022 - 2024)
+with the Excellence Scholarship
+BSc in Finance-Banking
+at Tan Tao University, Vietnam (2012 - 2016)
+with the TTU-ITA Excellence Scholarship
+Awards Excellence Scholarship
+by the University of Milan, Italy - Full ride (2022)</description></item><item><title>Introduction to Python</title><link>https://tuedsci.github.io/tutorials/python/basic/intro-python/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tuedsci.github.io/tutorials/python/basic/intro-python/</guid><description>What is Python? Python is a general-purpose, interpreted, interactive, muti-paradigm, and high-level programming language.
 Ugh, this sounds like a mouthful, but let&amp;rsquo;s break down what each of these terms actually means.
 General-purpose Programming languages can be divided into general-purpose or domain-specific.
 General-purpose languages are those designed to solve many classes of problems in different domains. Take Python, for example, we can find its applications in many areas including (but not limited to) data science, scientific computing, web development, game development, graphical user interface, embedded systems, and more.</description></item><item><title>Introduction to SQL</title><link>https://tuedsci.github.io/tutorials/sql/basic/intro/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tuedsci.github.io/tutorials/sql/basic/intro/</guid><description>What is SQL? Informal definition SQL stands for Structured Query Language. It is the language we, as humans, use to communicate with databases. Think of a database as a foreigner (an arrogant one). This foreigner doesn&amp;rsquo;t know our language, and since he is arrogant, he will never try to learn ours. To communicate and work with him, we must learn the language that he understands, i.e., SQL.
 Formal definition SQL is a domain-specific language designed for managing and manipulating data stored in relational database management systems (or DBMSs).</description></item><item><title>Welcome</title><link>https://tuedsci.github.io/tutorials/python/basic/welcome/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tuedsci.github.io/tutorials/python/basic/welcome/</guid><description>This tutorial series aims to help you learn fundamental programming skills with Python. The contents grew out of my experience working as a data analyst/scientist as well as teaching data science to young professionals.
-Audience This book is for anyone who wants to learn how to program in Python and leverage it to perform analytics tasks. This means I assume no prior knowledge in programming or data analysis.
+Audience This series is designed for anyone who wants to learn how to program in Python and leverage it to perform analytics tasks. This means I assume no prior knowledge in programming or data analysis.
 Author For more information about me or other resources, please visit my website at https://tuedsci.</description></item></channel></rss>
