@@ -1,18 +1,18 @@
 ---  
 title: Deploy a Hugo website as a GitHub page
 date: 2022-10-20
----  
+---
+
 This post summarizes the key steps to create and deploy a Hugo website as a (
 free) GitHub page. For the detail instructions, please visit the suggested
 links
 or Google accordingly.
+
 <!--more-->
 
 ## Create a website
 
-I assume that you already created a deployable Hugo website on your local
-machine. If not, please visit the Hugo website and follow
-the [instructions here](https://gohugo.io/getting-started/quick-start/).
+I assume that you already created a deployable Hugo website on your local machine. If not, please visit the Hugo website and follow the [instructions here](https://gohugo.io/getting-started/quick-start/).
 Basically, you need to follow the steps below.
 
 Step 1: install Hugo
@@ -38,9 +38,7 @@ Step 6: customize your theme
 
 ## Create a GitHub repo
 
-After you feel satisfied with the look of your website (hopefully), the next
-step is to push the code to a remote repo on GitHub.
-Just follow the steps below.
+After you feel satisfied with the look of your website (hopefully), the next step is to push the code to a remote repo on GitHub. Just follow the steps below.
 
 Step 1: register for a GitHub account (if you haven't had one yet)
 
@@ -70,9 +68,7 @@ Step 1: create the following file `.github/workflows/gh-pages.yml`
 
 Step 2: paste the code for `actions-hugo` into the newly created file
 
-It should look like the snippet below, but please check out Hugo's official
-guideline [here](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
-for the most updated content
+It should look like the snippet below, but please check out Hugo's official guideline [here](https://gohugo.io/hosting-and-deployment/hosting-on-github/) for the most updated content.
 
 ```yaml
 # .github/workflows/gh-pages.yml
@@ -116,14 +112,12 @@ Step 4: wait for about 1 minute for the build to be completed
 
 ## Finalization
 
-After the build is completed, go to your GitHub account and follow the steps
-below.
+After the build is completed, go to your GitHub account and follow the steps below.
 
 Step 1: go to the repo for your website, i.e., `<username>.github.io`
 
 Step 2: go to `Settings > Pages`
 
-Step 3: on the section `Build and deployment > Branch`, select `gh-pages` (
-instead of `main`) and save
+Step 3: on the section `Build and deployment > Branch`, select `gh-pages` (instead of `main`) and save
 
 Step 4: your website should be ready at `https://<username>.github.io`

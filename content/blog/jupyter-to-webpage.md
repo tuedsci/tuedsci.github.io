@@ -3,9 +3,7 @@ title: From Jupyter Notebook to webpage
 date: 2022-10-21
 ---
 
-This post will guide you through the process of converting your existing
-jupyter notebook to a publishable webpage that can be embedded into your
-website. This guide is intended for Hugo websites, but the content is
+This post will guide you through the process of converting your existing jupyter notebook to a publishable webpage that can be embedded into your website. This guide is intended for Hugo websites, but the content is
 still valid if you use a different static site generator.
 
 <!--more-->
@@ -32,16 +30,13 @@ First, we need to be inside the folder where the target notebook resides.
 cd <nb-dir>
 ```
 
-Then we can start converting it into the format we want with the following
-syntax.
+Then we can start converting it into the format we want with the following syntax.
 
 ```bash
-jupyter nbconvert <nb-name> --to <format> --template <tmpl-name> 
+jupyter nbconvert <nb-name> --to <format> --template <tmpl-name>
 ```
 
-Suppose we want to convert a notebook named `my_analysis.ipynb` to different
-output formats using a template named `my_tmpl`, then the following is the
-syntax for each kind of output.
+Suppose we want to convert a notebook named `my_analysis.ipynb` to different output formats using a template named `my_tmpl`, then the following is the syntax for each kind of output.
 
 HTML output
 
@@ -57,8 +52,7 @@ jupyter nbconvert my_analysis.ipynb --to markdown --template my_tmpl
 
 ## Custom output template
 
-In this section, I will only show how to make a customized Markdown output
-template. But the process is similar for other formats.
+In this section, I will only show how to make a customized Markdown output template. But the process is similar for other formats.
 
 Step 1: navigate to the templates folder.
 
@@ -68,14 +62,8 @@ Step 1: navigate to the templates folder.
 
 Step 2: create a folder for your custom Markdown output template
 
-- Duplicate the `markdown/` folder because we will extend from this template.
-- Rename it the duplicated folder to `custommd/` (if you cannot think of any
-  better name).
-- Navigate into `custommd/`, open `index.md.j2`, and overwrite it with the
-  structure you desire. The following code example (
-  from [Nbconvert website](https://nbconvert.readthedocs.io/en/latest/customizing.html#a-practical-example))
-  extends the default Markdown template to wrap outputs in code fences with
-  name `output`.
+- Duplicate the `markdown/` folder because we will extend from this template. Rename it the duplicated folder to `custommd/` (if you cannot think of any better name).
+- Navigate into `custommd/`, open `index.md.j2`, and overwrite it with the structure you desire. The following code example (from [Nbconvert website](https://nbconvert.readthedocs.io/en/latest/customizing.html#a-practical-example)) extends the default Markdown template to wrap outputs in code fences with name `output`.
 
 ````text
 {% extends 'markdown/index.md.j2' %}
@@ -142,8 +130,7 @@ for item in to_convert:
     subprocess.run(args)
 ```
 
-However, the current version of `nbconvert` will auto-generate tables in form
-of HTML tags together with an inline style, something like this.
+However, the current version of `nbconvert` will auto-generate tables in form of HTML tags together with an inline style, something like this.
 
 ```html
 
@@ -162,11 +149,9 @@ of HTML tags together with an inline style, something like this.
 </style>
 ```
 
-Thus, we need to do extra work to remove this inline style so that the tables
-will be rendered with a style consistent with the whole website.
+Thus, we need to do extra work to remove this inline style so that the tables will be rendered with a style consistent with the whole website.
 
-For now, I cannot think of any better solution except to add another
-cell `md_convert.ipynb` with the following content.
+For now, I cannot think of any better solution except to add another cell `md_convert.ipynb` with the following content.
 
 ```python
 # Remove the generated styles
@@ -188,9 +173,6 @@ for item in to_convert:
         f.write(stripped)
 ```
 
-Basically, the above code just reads the generated markdown, cleans the text
-between `<style scoped>` and `</style>`, and finally overwrites the stripped
-content back to the original Markdown file.
+Basically, the above code just reads the generated markdown, cleans the text between `<style scoped>` and `</style>`, and finally overwrites the stripped content back to the original Markdown file.
 
-Step 4: copy the Markdown file generated in step 3 to the `content/` folder of
-your website and let Hugo do the build. 
+Step 4: copy the Markdown file generated in step 3 to the `content/` folder of your website and let Hugo do the build.

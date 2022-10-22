@@ -1,12 +1,9 @@
 ---  
 title: Syntax highlighting with highlight.js
 date: 2022-10-19
----  
+---
 
-The `highlight.js` library is a comprehensive project that offers a rich
-collection of syntax highlighting styles (both dark and light themes). You can
-easily incorporate it into your website with just three lines of code. This
-post will walk you through all the steps as well as give some demos.
+The `highlight.js` library is a comprehensive project that offers a rich collection of syntax highlighting styles (both dark and light themes). You can easily incorporate it into your website with just three lines of code. This post will walk you through all the steps as well as give some demos.
 
 <!--more-->
 
@@ -24,23 +21,17 @@ Step 2: put the following code in the `<head></head>` section
 <script>hljs.highlightAll();</script>
 ```
 
-Note: you should visit [here](https://highlightjs.org/download/) to get the
-latest version
+Note: you should visit [here](https://highlightjs.org/download/) to get the latest version
 
-Step 3: take a look at the demo [here](https://highlightjs.org/static/demo/) to
-choose the one you like the most
+Step 3: take a look at the demo [here](https://highlightjs.org/static/demo/) to choose the one you like the most
 
-Step 4: go to
-the [official GitHub repo](https://github.com/highlightjs/highlight.js/tree/main/src/styles)
-to get the correct name for the style you chose in step 3
+Step 4: go to the [official GitHub repo](https://github.com/highlightjs/highlight.js/tree/main/src/styles) to get the correct name for the style you chose in step 3
 
-Step 5: replace `<style-name>` in the code snippet in step 2 with the style
-name found in the official GitHub repo, save, and enjoy the result
+Step 5: replace `<style-name>` in the code snippet in step 2 with the style name found in the official GitHub repo, save, and enjoy the result
 
 ## Recommendation
 
-The collection is huge, and I did not have time to look at all the styles.
-However, here are the styles that I found most attractive.
+The collection is huge, and I did not have time to look at all the styles. However, here are the ones that I found most attractive.
 
 - Light themes: `atom-one-light`
 - Dark themes: `agate`, `atom-one-dark`, `base16/decaf`, `base16/danqing`, `base16/eighties`
@@ -50,7 +41,7 @@ However, here are the styles that I found most attractive.
 ### SQL code
 
 ```sql
-SELECT 
+SELECT
     C.CustomerID,
     C.FirstName,
     CA.AddressID,
@@ -60,7 +51,7 @@ SELECT
         ', ', A.AddressLine1, A.AddressLine2,
         A.City, A.StateProvince, A.CountryRegion
     ) AS FullAdress
-    
+
 -- Join C and CA
 FROM Customer AS C
 LEFT JOIN CustomerAddress AS CA
@@ -117,11 +108,11 @@ models <- tibble::tribble(
     "interaction",  Sepal.Length ~ Petal.Width * Petal.Length
 )
 
-iris %>% 
-    nest_by(Species) %>% 
-    left_join(models, by = character()) %>% 
-    rowwise(Species, model_name) %>% 
-    mutate(model = list(lm(formula, data = data))) %>% 
+iris %>%
+    nest_by(Species) %>%
+    left_join(models, by = character()) %>%
+    rowwise(Species, model_name) %>%
+    mutate(model = list(lm(formula, data = data))) %>%
     summarise(broom::glance(model))
 ```
 

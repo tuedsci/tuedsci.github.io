@@ -4,18 +4,13 @@ date: 2022-10-18
 math: true
 ---
 
-Math formulas can be rendered beautifully by using third-party JavaScript
-libraries such as [Katex](https://katex.org/)
-or [MathJax](https://www.mathjax.org/). In this post, I will show you how to
-incorporate Katex into your Hugo website. The reason I chose Katex is that it
-is faster while still has all the functionalities I need.
+Math formulas can be rendered beautifully by using third-party JavaScript libraries such as [Katex](https://katex.org/) or [MathJax](https://www.mathjax.org/). In this post, I will show you how to incorporate Katex into your Hugo website. The reason I chose Katex is that it is faster while still has all the functionalities I need.
 
 <!--more-->
 
 ## Set up
 
-Step 1: create a partial for Katex at `layouts/partials/katex.html` and fill it
-with the following content
+Step 1: create a partial for Katex at `layouts/partials/katex.html` and fill it with the following content
 
 ```html
 
@@ -46,8 +41,7 @@ with the following content
 </script>
 ```
 
-Note: for the latest version, please
-visit [here](https://katex.org/docs/browser.html)
+Note: for the latest version, please visit [here](https://katex.org/docs/browser.html)
 
 Step 2: include this partial to the `<head>` section
 of `layouts/_default/baseof.html`
@@ -56,15 +50,16 @@ of `layouts/_default/baseof.html`
 
 <head>
     ...
-    {{ if .Params.math }}{{ partial "katex.html" . }}{{ end }}
+    {{ if or .Params.math .Site.Params.math }}
+    {{ partial "katex.html" . }}
+    {{ end }}
     ...
 </head>
 ```
 
 ## Config your posts
 
-To enable Katex rendering, you should set `math: true` in the front matter of
-your post.
+To enable Katex rendering, you should set `math: true` in the front matter of your post.
 
 ```yaml
 # your-post.md
