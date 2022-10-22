@@ -4,6 +4,7 @@ layout: "page"
 ---
 
 ## Personal details
+---
 
 **Full name:** Nguyen Trong Tue  
 **Mobile:** (+39) 348 45 29 458  
@@ -13,28 +14,33 @@ layout: "page"
 **LinkedIn:** https://www.linkedin.com/in/tuedsci  
 
 ## Education
+---
 
-**MSc in Data Science for Economics** (2022 - 2024)  
-at *the University of Milan, Italy*, with the Excellence Scholarship
+**MSc in Data Science for Economics**  
+at *the University of Milan, Italy (2022 - 2024)*  
+with *the Excellence Scholarship*
 
-**BSc in Finance-Banking** (2012 - 2016)   
-at *Tan Tao University, Vietnam*, with the TTU-ITA Excellence Scholarship
+**BSc in Finance-Banking**  
+at *Tan Tao University, Vietnam (2012 - 2016)*  
+with *the TTU-ITA Excellence Scholarship*
 
 ## Awards
+---
 
-**Excellence Scholarship** (2022)  
-by *the University of Milan, Italy - Full ride*
+**Excellence Scholarship**  
+by *the University of Milan, Italy - Full ride (2022)*
 
-**Erasmus Mundus Scholarship (QEM)** (2021)  
-by *the European Commission - Full ride*
+**Erasmus Mundus Scholarship (QEM)**  
+by *the European Commission - Full ride (2021)*
 
-**Mitacs Globalink Research Internship Award** (2015)  
-by *Mitacs and Government of Canada - Full ride*
+**Mitacs Globalink Research Internship Award**  
+by *Mitacs and Government of Canada - Full ride (2015)*
 
-**TTU-ITA Excellence Scholarship** (2012 - 2016)  
-by *Tan Tao University - Full ride*
+**TTU-ITA Excellence Scholarship**  
+by *Tan Tao University - Full ride (2012 - 2016)*
 
 ## Skills
+---
 
 **Programming:** Python, R, Matlab, Octave  
 **Databases:** Relational DBMS/SQL (PostgreSQL, MySQL, SQL Server), NoSQL (MongoDB)  
@@ -44,18 +50,29 @@ by *Tan Tao University - Full ride*
 **Other**: Git, Command-line, Windows/Linux, Latex/Markdown, HTML/CSS, Technical writing  
 
 ## Employment
-**Junior Data Scientist** at *Trusting Social, Vietnam* (2020 - 2021)  
-**Research Engineer** at *Trusting Social, Vietnam* (2017 - 2019)  
-**Data Specialist** at *Sentifi AG, Vietnam* (2017)  
-**(Part-time) Data Analytics Instructor** at *Nordic Coder* (2019 - 2021) & *Datapot* (2022)
+---
+
+**Junior Data Scientist**  
+at *Trusting Social, Vietnam (2020 - 2021)*
+
+**Research Engineer**  
+at *Trusting Social, Vietnam  (2017 - 2019)* 
+
+**Data Specialist**  
+at *Sentifi AG, Vietnam (2017)* 
+
+**(Part-time) Data Analytics Instructor**  
+at *Nordic Coder (2019 - 2021) & Datapot (2022)*
 
 
 ## Languages
+---
 
 **Vietnamese:** native  
 **English:** fluent (C1 level)
 
 ## Certificates
+---
 
 **IELTS Academic**  
 *scored 7.5*

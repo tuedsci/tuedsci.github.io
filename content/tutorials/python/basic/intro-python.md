@@ -44,7 +44,7 @@ A programming language can be either high-level or low-level, depending on wheth
 
 A high-level language is human-friendly in that its syntax is very readable and straightforward for programmers to translate ideas into code. The downside is that it gives us less control over physical hardware.
 
-In contrast, a low-level language is machine-oriented. You have to do more work in specifying the steps and operations for the machine, which make it harder and longer to write a program. The benefit is you have more fine-grain control over the hardware (but you have to be really careful as well).
+In contrast, a low-level language is machine-oriented. You have to do more work in specifying the steps and operations for the machine, which make it harder and longer to write a program. The benefit is you have more fine-grained control over the hardware (but you have to be really careful as well).
 
 Generally speaking, only assembly and machine code are considered low-level. The rest, including Python, R, Java, C, or C++, are considered high-level. However, low and high are relative, for example, Python is considered to be higher level than C.
 
@@ -56,7 +56,7 @@ by [Guido van Rossum](https://en.wikipedia.org/wiki/Guido_van_Rossum), a Dutch p
 ## The name Python
 
 There is a mystery about the name Python. If you look at the name and the logo, you might think it was inspired by a kind of snake. But the snake was completely irrelevant. In fact, Guido was a bit random when choosing the name for the language he had just created. He wanted something short and kind of
-mysterious, and at the time he was a huge fan of [Monty Python's Flying Circus](https://it.wikipedia.org/wiki/Monty_Python%27s_Flying_Circus) a comedy show broadcast by BBC. And Guido was like "Why don't we just name it
+mysterious, and at the time he was a huge fan of [Monty Python's Flying Circus](https://it.wikipedia.org/wiki/Monty_Python%27s_Flying_Circus), a comedy show broadcast by BBC. And Guido was like "Why don't we just name it
 Python and get rid of all the headache?"
 
 ## Python 2 or 3?

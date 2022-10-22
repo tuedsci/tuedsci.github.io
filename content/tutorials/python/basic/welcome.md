@@ -6,7 +6,7 @@ This tutorial series aims to help you learn fundamental programming skills with 
 
 ## Audience
 
-This book is for anyone who wants to learn how to program in Python and leverage it to perform analytics tasks. This means I assume no prior knowledge in programming or data analysis.
+This series is designed for anyone who wants to learn how to program in Python and leverage it to perform analytics tasks. This means I assume no prior knowledge in programming or data analysis.
 
 ## Author
 
