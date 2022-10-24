@@ -49,8 +49,7 @@ visit <a href=https://buildmedia.readthedocs.org/media/pdf/nbconvert/latest/nbco
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>    <span class=c1># Execute</span>
 </span></span><span class=line><span class=cl>    <span class=n>subprocess</span><span class=o>.</span><span class=n>run</span><span class=p>(</span><span class=n>args</span><span class=p>)</span>
-</span></span></code></pre></div><p>However, the current version of <code>nbconvert</code> will auto-generate tables in form of HTML tags together with an inline style, something like this.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl>
-</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>style</span> <span class=na>scoped</span><span class=p>&gt;</span>
+</span></span></code></pre></div><p>However, the current version of <code>nbconvert</code> will auto-generate tables in form of HTML tags together with an inline style, something like this.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>style</span> <span class=na>scoped</span><span class=p>&gt;</span>
 </span></span><span class=line><span class=cl>    <span class=p>.</span><span class=nc>dataframe</span> <span class=nt>tbody</span> <span class=nt>tr</span> <span class=nt>th</span><span class=p>:</span><span class=nd>only-of-type</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>        <span class=k>vertical-align</span><span class=p>:</span> <span class=kc>middle</span><span class=p>;</span>
 </span></span><span class=line><span class=cl>    <span class=p>}</span>
