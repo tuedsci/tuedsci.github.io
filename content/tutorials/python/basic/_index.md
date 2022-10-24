@@ -7,7 +7,7 @@ layout: page
 
 - [Welcome](welcome)
 - [Introduction to Python](intro-python)
-- [Setting your environment](setup)
+- [Setting up your environment](setup)
 - [Jupyter Lab](jupyter-lab)
 - [Markdown](markdown)
 

@@ -133,7 +133,6 @@ for item in to_convert:
 However, the current version of `nbconvert` will auto-generate tables in form of HTML tags together with an inline style, something like this.
 
 ```html
-
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;

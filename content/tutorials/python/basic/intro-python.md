@@ -65,7 +65,7 @@ Since its first release in 1991, Python has gone through three major versions, n
 
 Python 2 came out in 2000 with many enhancements compared to Python 1. It was the version that brought Python its widespread use and long-lasting fame. However, as time passed, Python 2 revealed some fatal weaknesses deemed "unfixable" (I will not discuss them here).
 
-Python 3 is the next advancement after Python 2, and it was first released in 2008. It is not just an extension of Python 2 but a complete rebuild of the language. Its main intention was to fix all the critical shortcomings of the previous version. Python 3 did achieve that goal but at the cost of giving up backward compatibility. Backward incompatibility means that code written in Python 2 might not run on a Python 3 interpreter (and vice versa). However, for the large part, the syntaxes are almost identical in both versions.
+Python 3 is the next advancement after Python 2, and it was released in 2008. It is not just an extension of Python 2 but a complete rebuild of the language. Its main intention was to fix all the critical shortcomings of the previous version. Python 3 did achieve that goal but at the cost of giving up backward compatibility. Backward incompatibility means that code written in Python 2 might not run on a Python 3 interpreter (and vice versa). However, for the large part, the syntaxes are almost identical in both versions.
 
 As a side note, Python 2 was [officially sunset](https://www.python.org/doc/sunset-python-2/) on January 1, 2020, meaning there will be no more improvement for this version (even if security problems are found and reported).
 
