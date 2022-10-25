@@ -347,6 +347,14 @@ pre {
     margin: 1em 0;
 }
 
+pre .language-output {
+    display: block;
+    overflow-x: auto;
+    padding: 1em;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+}
+
 code {
     background: #e3e3e3;
     padding: 1px 3px;
