@@ -298,7 +298,7 @@ In addition, if you come from a language like C/C++ or Java, you might be tempte
 ```python
 # You can use ; to write multiple statements on 1 line
 # But this practice is discouraged
-x = 5; y = 6; z = 7
+x = 5; y = 6; z = 7;
 print(x + y + z)
 ```
 
@@ -406,7 +406,7 @@ In many languages such as C/C++, Java, or R, curly brackets (i.e., `{}`) are use
 
 Indentation is the spaces at the beginning of each line. A common convention is to use four spaces for one level of indentation (you use another four for the next level and so on). For now, just remember the following.
 
-- Never indent your code if you don't have a reason.
+- Never indent your code if you don't have a reason to do so.
 - Always indent the new line after a statement that ends with `:` such as `if`, `else`, `for`, or `while`.
 
 Let's take a look at an example.
@@ -450,7 +450,7 @@ You usually need help when you face things that 1) you don't know or 2) you know
 1. Consulting Python's internal documentation
 1. Googling
 
-## Using Python documentation
+### Using Python documentation
 
 We use `?` to see the documentation for Python objects such as variables, functions, classes, or modules. Let's take a look at some examples.
 
@@ -468,13 +468,13 @@ You know the `sorted()` function allows you to sort a list in descending order, 
 
 ### Googling
 
-Let's say you want to sort a list in descending order in Python but don't know how. You can ask Google with a query like `How to sort a list in a descending order in Python`.
+Let's say you want to sort a list in descending order in Python but don't know how. You can ask Google with a query like `How to sort a list in descending order in Python`.
 
 But here is the better query (in my opinion) `python sort list descending order stackoverflow`.
 
-First, need correct keywords, not correct grammar. So don't bother spending time writing grammatically correct search queries. Search engines are smart; they know what you mean.
+First, we need correct keywords, not correct grammar. So don't bother spending time writing grammatically correct search queries. Search engines are smart; they know what you mean.
 
-Second, StackOverflow is a very good reference for common issues related to coding. You often save a lot of time by looking for solutions from it, and the top-rated solutions are usually excellent. Try this as you learn Python and I am sure you will be convinced. The following formula will save your life many times.
+Second, StackOverflow is a very good source of reference for common issues related to coding. You often save a lot of time by looking for solutions from it, and the top-rated solutions are usually excellent. Try this as you learn Python and I am sure you will be convinced. The following formula will save your life many times.
 
 > python + keywords for your problem + stackoverflow
 
@@ -484,7 +484,7 @@ Again, I feel that I should summarize this wall of text into some bullet points 
 
 **Math**
 
-- Basic: `+`, `-`, `*`, `/`
+- Basic operations: `+`, `-`, `*`, `/`
 - Integer division: `//`
 - Modulus: `%`
 - Exponentiation: `**`
@@ -534,7 +534,7 @@ Again, I feel that I should summarize this wall of text into some bullet points 
 
 - Python use indentation to determine code blocks
 - Remember
-  - Never indent your code if you have no reason to do so
+  - Never indent your code for no reason
   - Always indent the new line after a statement that ends with `:`
 
 **Getting help**
