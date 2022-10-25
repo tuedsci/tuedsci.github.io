@@ -109,6 +109,6 @@ Note: you will learn about Markdown in the next lesson.
 
 ## Final notes
 
-This series is about teaching you Python, not about using Jupyter Lab or specific IDEs. There is plenty of free resources (e.g., YouTube videos or blog posts) that teach you how to use these tools. Therefore, this lesson just gives you an idea of an appropriate tool for you to start with, not detailed instructions on how to use the tool.
+This series is about teaching you Python, not about how to use Jupyter Lab or specific IDEs. There is plenty of free resources (e.g., YouTube videos or blog posts) that teach you how to use these tools. Therefore, this lesson just gives you an idea of an appropriate tool for you to start with, not detailed instructions on how to use the tool.
 
 Starting from the next lesson, I assume that you are somehow familiar with Jupyter Lab (or another alternative). Thus, the future content will focus exclusively on Python.
