@@ -60,13 +60,9 @@ In Mardown, we use `#` to generate headings. The number of `#`'s indicates the l
 # Level 1
 
 ## Level 2
-
 ### Level 3
-
 #### Level 4
-
 ##### Level 5
-
 ###### Level 6
 ```
 
@@ -349,15 +345,10 @@ I think it's good to summarize this lengthy lesson in a few lines (not really, b
 
 ```markdown
 # Level 1
-
 ## Level 2
-
 ### Level 3
-
 #### Level 4
-
 ##### Level 5
-
 ###### Level 6
 ```
 
@@ -434,7 +425,7 @@ $E = mc^2$
 
 ```
 $$
-M = \begin{bmatrix}a_1 & b_1\\
+M = \begin{bmatrix}a_1 & b_1 \\
 a_2 & b_2 \\
 a_3 & b_3
 \end{bmatrix}
