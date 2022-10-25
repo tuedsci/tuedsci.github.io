@@ -65,7 +65,7 @@ Often, you will work on multiple projects, so it is a good practice to have a pa
 Another tip is to organize your project into sub-folders so that it will be easier for you to navigate items in your project, especially if it is a complex one. See the example below.
 
 ```text
-example/          # Root directory
+pycourse/          # Root directory
     |____ data/   # For data
     |____ nb/     # For analytic notebooks
     |____ lib/    # For custom modules

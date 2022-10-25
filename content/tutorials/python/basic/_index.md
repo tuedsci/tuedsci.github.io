@@ -8,8 +8,8 @@ layout: page
 - [Welcome](welcome)
 - [Introduction to Python](intro-python)
 - [Setting up your environment](setup)
-- [Jupyter Lab](jupyter-lab)
-- [Markdown](markdown)
+- [Introduction to Jupyter Lab](jupyter-lab)
+- [Introduction to Markdown](markdown)
 
 ### The basics
 
