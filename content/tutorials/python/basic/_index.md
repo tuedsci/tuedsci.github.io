@@ -14,12 +14,12 @@ layout: page
 ### The basics
 
 - [Basic syntax](basic-syntax)
-- [How to run a Python program](run-python-program)
+- [Assignments and variables](assignments-variables)
 - [Naming rules and conventions](naming)
 
 ### Data types
 
-- [Bird-eye view of Python typing system](python-types)
+- [Python typing system](python-types)
 - [Built-in scalar types](builtin-scalar-types)
   - [Null type](nonetype-type)
   - [Boolean type](bool-type)
