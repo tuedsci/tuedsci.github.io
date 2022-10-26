@@ -29,18 +29,18 @@ Markdown can be used for many purposes such as
 
 ### Minimal distraction
 
-Markdown offers much fewer features compared to rich-text text processors such as Microsoft Word. But this turns out to be its main advantage. By restricting you to a small set of formatting options, Markdown forces you to fucus on writing good content rather than spending time tweaking the appearances such as themes, fonts, colors, etc.
+Markdown offers much fewer features compared to rich-text processors such as Microsoft Word. But this turns out to be its main advantage. By restricting you to a small set of formatting options, Markdown forces you to focus on writing good content rather than spending time tweaking the appearances such as themes, fonts, colors, etc.
 
 ### Portability
 
 Unlike a Word file (`.docx`), a Markdown file (`.md`) is just a simple plain text file, which can be opened by any free text editors such as Notepad++, Sublime Text, or Atom.
 
 - You won't have to stick with any proprietary software or worry when migrating your files to different operating systems or cloud services because you can always access their contents
-- You can use version control to effectively keep track of changes to your files
+- You can use version control tools such as Git to effectively keep track of changes to your files.
 
 ### Easy integration
 
-If you plan to be a data analyst/scientist/researcher, technical documentation is part of your daily work. Markdown makes your life much easier by allowing you to mix your technical notes and executable code in the same place, a notebook for example.
+If you plan to be a data analyst, scientist, or w2researcher, technical documentation will be part of your daily work. Markdown makes your life much easier by allowing you to mix your technical notes and executable code in the same place, a notebook for example.
 
 ### Easy conversion
 
@@ -58,7 +58,6 @@ In Mardown, we use `#` to generate headings. The number of `#`'s indicates the l
 
 ```markdown
 # Level 1
-
 ## Level 2
 ### Level 3
 #### Level 4
@@ -125,81 +124,82 @@ Here is a nested unordered list.
 
 ```markdown
 - Item 1
-  - Sub-item 1.1
-  - Sub-item 1.2
+    - Sub-item 1.1
+    - Sub-item 1.2
 - Item 2
-  - Sub-item 2.1
-  - Sub-item 2.2
+    - Sub-item 2.1
+    - Sub-item 2.2
 ```
 
 You will see something like this.
 
 - Item 1
-  - Sub-item 1.1
-  - Sub-item 1.2
+    - Sub-item 1.1
+    - Sub-item 1.2
 - Item 2
-  - Sub-item 2.1
-  - Sub-item 2.2
-
+    - Sub-item 2.1
+    - Sub-item 2.2
+    
 Here is a nested ordered list.
 
 ```markdown
 1. Item 1
-   1. Sub-item 1.1
-   1. Sub-item 1.2
+    1. Sub-item 1.1
+    1. Sub-item 1.2
 1. Item 2
-   1. Sub-item 2.1
-   1. Sub-item 2.2
+    1. Sub-item 2.1
+    1. Sub-item 2.2
 ```
 
 You will see something like this.
 
 1. Item 1
-   1. Sub-item 1.1
-   1. Sub-item 1.2
+    1. Sub-item 1.1
+    1. Sub-item 1.2
 1. Item 2
-   1. Sub-item 2.1
-   1. Sub-item 2.2
+    1. Sub-item 2.1
+    1. Sub-item 2.2
 
 Here is a nested mixed list.
 
 ```markdown
 1. Item 1
-   - Sub-item 1.1
-   - Sub-item 1.2
+    - Sub-item 1.1
+    - Sub-item 1.2
 1. Item 2
-   - Sub-item 2.1
-   - Sub-item 2.2
+    - Sub-item 2.1
+    - Sub-item 2.2
 ```
 
 You will see something like this.
 
 1. Item 1
-   - Sub-item 1.1
-   - Sub-item 1.2
+    - Sub-item 1.1
+    - Sub-item 1.2
 1. Item 2
-   - Sub-item 2.1
-   - Sub-item 2.2
+    - Sub-item 2.1
+    - Sub-item 2.2
 
 ### Text emphases
 
 Text emphases are straighforward.
 
 - `**Bold**` will make **Bold**
-- `*Italic*` will make _Italic_
-- `***Bold and italic***` will make **_Bold and italic_**
+- `*Italic*` will make *Italic*
+- `_Italic_` wil also make _Italic_
+- `**_Bold and italic_**` will make **_Bold and italic_**
 - `~~Strike through~~` will make ~~Strike through~~
 
 ### Code fences
 
 Code fences are used to emphasize texts that should be understood as code elements, for example, variable names, expressions, or code blocks. There are two types of code fences: inline and block.
 
-Inline code fences are used for short code elements. The elements are embedded within regular texts (thus the name inline). To make an inline code, wrap the element inside a single backtick (i.e., `` ` ``). Here are some examples.
+Inline code fences are used for short code elements. The elements are embedded within regular texts (thus the name inline). To make an inline code, wrap the element inside a pairs of single backticks (i.e., `` ` ``). Here are some examples.
 
 - `` `profit` `` will be rendered as `profit`
 - `` `price * 1.1` `` will be rendered as `price * 1.1`
 
-In contrast, block code fences are used for, well, blocks of code, which normally spans more than one line. To make a block code, wrap the code inside a triple backticks (i.e., ` ``` `). You can also specify the language of the code to take advantage of syntax highlighting.
+In contrast, block code fences are used for, well, blocks of code, which normally spans more than one line. To make a block code, wrap the code inside a pair of triple backticks (i.e., ` ``` `). You can also specify the language of the code to take advantage of syntax highlighting.
 
 Here is an example.
 
@@ -297,7 +297,7 @@ You will see something like this.
 
 ### Images
 
-To insert an image, use the following syntax ![Caption](path/to/image).
+To insert an image, use the following syntax `![Caption](path/to/image)`.
 
 Here is an example.
 
@@ -311,31 +311,31 @@ You will see something like this.
 
 ### Tables
 
-Complicated animals like tables can still be generated using Markdown as shown in the example below.
+Complicated objects like tables can still be generated using Markdown as shown in the example below.
 
 ```markdown
 | id  | name       | email             |
 | :-- | :--------- | :---------------- |
-| 3   | Tue Nguyen | tuedsci@gmail.com |
-| 1   | John Doe   | john@gmail.com    |
-| 2   | Jane Smith | jane@hotmail.com  |
+| 1   | Tue Nguyen | tuedsci@gmail.com |
+| 2   | John Doe   | john@yahoo.com    |
+| 3   | Jane Smith | jane@hotmail.com  |
 ```
 
-You will see a very nice table like this.
+You will see a very nice-looking table like this.
 
 | id  | name       | email             |
 | :-- | :--------- | :---------------- |
-| 3   | Tue Nguyen | tuedsci@gmail.com |
-| 1   | John Doe   | john@gmail.com    |
-| 2   | Jane Smith | jane@hotmail.com  |
+| 1   | Tue Nguyen | tuedsci@gmail.com |
+| 2   | John Doe   | john@yahoo.com    |
+| 3   | Jane Smith | jane@hotmail.com  |
 
-However, my advice is not to type tables by yourself (you can still try it if you want). Instead, go to some website that offers a free Markdown table generator such as [this one](https://www.tablesgenerator.com/markdown_tables). Another option is to look for pluggins that do such jobs for the editor of your choice. For example, I use some Markdown Table Formatter add-on on Sublime Text, and it works very well so far.
+However, my advice is not to type tables by yourself (you can still try it if you want). Instead, go to some website that offers a free Markdown table generator such as [this one](https://www.tablesgenerator.com/markdown_tables). Another option is to look for pluggins that do such jobs for the editor of your choice. For example, I use an add-on named Markdown Table Formatter on Sublime Text, and it works very well so far.
 
 ### Final notes
 
 The syntax introduced so far is enough for you to have a nice-looking notebook. I rarely use any Markdown features beyond those.
 
-> Remember, the most important thing is the quality of your analysis. Don't bother too much with fancy formatting
+> Remember, the most important thing is the quality of your analysis. Don't bother too much with fancy formatting.
 
 ## Summary
 
@@ -356,7 +356,7 @@ I think it's good to summarize this lengthy lesson in a few lines (not really, b
 
 ```markdown
 Bold: **bold**
-Italic: _italic_
+Italic: _italic_ or *italic*
 Bold and italic: **_Bold and italic_**
 Strike through: ~~Strike through~~
 ```
@@ -377,26 +377,37 @@ Strike through: ~~Strike through~~
 1. item 3
 ```
 
-**Nested lists**
+**Unordered nested lists**
 
 ```markdown
 - item 1
-  - sub-item 1.1
-  - sub-item 1.2
+    - sub-item 1.1
+    - sub-item 1.2
 - item 2
-  - sub-item 2.1
-  - sub-item 2.2
+    - sub-item 2.1
+    - sub-item 2.2
+```
+
+**Ordered nested lists**
+
+```markdown
+1. item 1
+    1. sub-item 1.1
+    1. sub-item 1.2
+1. item 2
+    1. sub-item 2.1
+    1. sub-item 2.2
 ```
 
 **Mixed nested lists**
 
 ```markdown
 1. item 1
-   - sub-item 1.1
-   - sub-item 1.2
+    - sub-item 1.1
+    - sub-item 1.2
 1. item 2
-   - sub-item 2.1
-   - sub-item 2.2
+    - sub-item 2.1
+    - sub-item 2.2
 ```
 
 **Inline code**

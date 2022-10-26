@@ -7,7 +7,7 @@ From the last lesson, we know that a variable (or variable name) is created thro
 
 ## Assignments demystified
 
-Let's consider a simple assignment.
+Let's consider the following assignment.
 
 ```python
 x = 1000
@@ -35,9 +35,9 @@ I think the following analogy would help.
 
 Thus, the assignment `x = 1000` can be seen as
 
-1. Create a box (object) to hold a gift (value `1000`)
-1. Put the box inside a locker (a slot in memory)
-1. Paste a label (variable) on the box so that we know where to retrieve it later
+- Create a box (object) to hold a gift (value `1000`)
+- Put the box inside a locker (a slot in memory)
+- Paste a label (variable) on the box so that we know where to retrieve it later
 
 Every assignment, simple or complicated, works the same way as described above.
 
@@ -61,11 +61,11 @@ Step 3: Python opens the box and gets the value `1000`. Now, this is a literal, 
 
 ## Why variables?
 
-It is extremely complicated for us, as human beings, to deal with objects directly. So we use variables to help abstract away all unnecessary technical complications so that we can focus on solving our main problem at a higher level.
+It is extremely complicated for us, as human beings, to deal with objects directly. So we use variables to abstract away all unnecessary technical complications so that we can focus on solving our main problem at a higher level.
 
 ## Object IDs
 
-Every object, when created, has a unique ID, that stays with the object until it dies (just like the ID number of a person). However, as mentioned earlier, we rarely work with objects directly. Thus, to check the ID of an object, we must work with the variable associated with it. Specifically, we use `id(x)` to get the ID of the object that `x` refers to.
+Every object, when created, has a unique ID that stays with the object until it dies (just like the ID number of a person). However, as mentioned earlier, we rarely work with objects directly. Thus, to check the ID of an object, we must work with the variable associated with it. Specifically, we use `id(x)` to get the ID of the object that `x` refers to.
 
 ```python
 id(x)
@@ -107,11 +107,11 @@ print(id(y))
 
 You see, although both `x` and `y` are associated with the same value `1000`, they are pointing to two different objects. Think of this situation as having two 50-euro notes. These notes have the same value but are distinct notes (with different serial numbers). Or if you prefer the "box model", here we have two boxes containing the same thing. But they are distinct boxes, and `x` is a label pasted on one box while `y` is a label pasted on the other.
 
-## Value and identity comparison
+## Value and identity comparisons
 
 I hope now you can distinguish three related concepts: variables, objects, and values. Of those three, we care only about values because values are the data containing useful information to us. However, data or values cannot stand on their own. They need to be materialized by means of objects. We, as humans, do not work with objects directly but through means of variables. Thus, when we say two things are equal, we must be clear about the subjects of comparison.
 
-Python use the double-equality sign (i.e., `==`) for **comparing values** and the keyword `is` for **comparing identities**. So `x == y` will return `True` if the associated values with `x` and `y` are equal, even if `x` and `y` are pointing to different objects. In contrast, `x is y` will return `True` only if `x` and `y` is pointing to the same underlying object.
+Python use the double-equality sign (i.e., `==`) for **comparing values** and the keyword `is` for **comparing identities**. So `x == y` will return `True` if the associated values with `x` and `y` are equal, even if `x` and `y` are pointing to different objects. In contrast, `x is y` will return `True` only if `x` and `y` are pointing to the same underlying object.
 
 In terms of the "box model", `x == y` returns `True` when the two boxes contain the same thing. They could be (but not necessarily) the same box. While `x is y` only returns `True` when `x` and `y` are two labels pasted on the same box.
 
@@ -233,7 +233,7 @@ True
 
 ## Python interning
 
-We have seen how the "assignment theory" works for some large numbers such as `1000`, `2000`, or `5000`. Let's see if the theory is still true with "small numbers".
+We have seen how the "assignment theory" works for some large integers such as `1000`, `2000`, or `5000`. Let's see if the theory is still true with "small integers".
 
 ```python
 x = 100
@@ -258,7 +258,7 @@ As you can see, `x` and `y` are pointing to the same object, and it is not consi
 
 ### Integer interning
 
-For some reason, the core development teams decided that those between `-5` and `128` are in the "interning range". However, depending on specific implementations, the range might vary. These integers are used much more frequently than others, so at startup, Python loads and caches them in memory. Whenever you try to assign a value in this range to a variable, Python will point the variable to the corresponding cached copy instead of creating a new object.
+For some reason, the core development teams decided that those between `-5` and `128` are in the "interning range". However, depending on specific implementations, the range might vary. These integers are used much more frequently than others, so at startup, Python materializes and caches them in memory. Whenever you try to assign a value in this range to a variable, Python will point the variable to the corresponding cached copy instead of creating a new object.
 
 Let's try some examples to verify this for integers within the "interning range".
 
@@ -332,4 +332,4 @@ False
 
 ## Takeaway
 
-Usually, you can safely use Python without the knowledge of interning because you also rarely perform identity comparisons in practice. However, I believe it is useful to have an awareness of such weird behavior and the reasons for its existence. For the most part, the standard "assignment theory" works just fine, and that's all you need.
+Usually, you can safely use Python without the knowledge of interning because you rarely perform identity comparisons in practice. However, I believe it is useful to have an awareness of such weird behavior and the reasons for its existence. For the most part, the standard "assignment theory" works just fine, and that's all you need to know.

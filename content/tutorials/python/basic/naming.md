@@ -8,7 +8,7 @@ When writing a program, we often have to give names to many things such as varia
 
 **Rules** are specifications that we must follow, while **conventions** are more like suggestions of best practices by experienced programmers that are widely accepted by the community. We are not required to follow conventions, but we should.
 
-For now, we only focus on naming variables. However, the rules and conventions are very similar (with some minor exceptions) to the others.
+For now, we only focus on naming variables. However, the rules and conventions for the others are very similar (with some minor exceptions).
 
 ## Naming rules
 
@@ -91,9 +91,9 @@ Keep your name short and simple, but still meaningful (now you know what Phil Ka
 
 > 6. Avoid names of popular functions and modules
 
-If you run `print = 5`, you will not be able to use the `print()` functions. Thus, avoid it.
+If you run `print = 5`, you will not be able to use the `print()` function. Thus, avoid it.
 
-To conclude this section, here are some examples of names with good styles (following conventions) and bad styles (not following conventions).
+To conclude this section, I provide some examples of names with good styles (following conventions) and bad styles (not following conventions).
 
 ```python
 # Good
