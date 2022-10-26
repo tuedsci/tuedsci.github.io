@@ -4,7 +4,9 @@ title: Naming rules and conventions
 
 > There are only two hard things in Computer Science: cache invalidation and naming things (Phil Karlton)
 
-When writing a program, we often have to give names to many things such as variables, functions, classes, and modules. Therefore, it is crucial to learn the rules and conventions. **Rules** are specifications that we must follow, while **conventions** are more like suggestions of best practices by experienced programmers that are widely accepted by the community. We are not required to follow conventions, but we should.
+When writing a program, we often have to give names to many things such as variables, functions, classes, and modules. Therefore, it is crucial to learn the rules and conventions. 
+
+**Rules** are specifications that we must follow, while **conventions** are more like suggestions of best practices by experienced programmers that are widely accepted by the community. We are not required to follow conventions, but we should.
 
 For now, we only focus on naming variables. However, the rules and conventions are very similar (with some minor exceptions) to the others.
 
@@ -29,9 +31,9 @@ assert      else        import      pass
 break       except      in          raise
 ```
 
-Besides, Python is **case-sensitive**, meaning that it distinguishes between lowercase and uppercase. Thus, `firstname`, First`Name, and ` are different names.
+Besides, Python is **case-sensitive**, meaning that it distinguishes between lowercase and uppercase. Thus, `firstname`, `FirstName`, and `FIRSTNAME` are different names.
 
-Here are some examples of valid names.
+Here are some examples of valid and invalid names.
 
 ```python
 # Valid names
@@ -39,11 +41,7 @@ age
 num_jobs
 file_name
 _xyz
-```
 
-And here are examples of invalid names.
-
-```python
 # Invalid names
 warnings!       # contains a special character !
 net.profit      # contains a special character .
@@ -85,7 +83,7 @@ class bankAccount:
 
 > 4. Meaningful and easy to remember
 
-Good code should be self-explanatory, and having good names is just one factor. Consider using `interest_rate` or at least `rate` instead of `r` or `ir`.
+Good code should be self-explanatory, and having good names is one factor. Consider using `interest_rate` or at least `rate` instead of `r` or `ir`.
 
 > 5. Reasonable length
 
@@ -93,7 +91,7 @@ Keep your name short and simple, but still meaningful (now you know what Phil Ka
 
 > 6. Avoid names of popular functions and modules
 
-If you run `print = 5`, you will not be able to use the `print()` functions.
+If you run `print = 5`, you will not be able to use the `print()` functions. Thus, avoid it.
 
 To conclude this section, here are some examples of names with good styles (following conventions) and bad styles (not following conventions).
 
