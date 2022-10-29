@@ -61,7 +61,7 @@ Collection types can be further divided into three sub-groups as follows.
 
 We will learn all of them in detail in future lessons.
 
-### Callable
+### Callables
 
 The data types introduced earlier have the same nature: they are designed to store data. However, you will learn about functions and methods, which are designed to manipulate data, not to store them.
 
@@ -116,7 +116,7 @@ type("Ciao")
 str
 ```
 
-## Python is dynamically typed
+## Dynamic typing
 
 Python is dynamically typed, meaning that the type of an object is determined at runtime when the object is created. This is done automatically by Python when it evaluates the value to form the object. Thus, we don't need any kind of "type declaration" like in C/C++ for example.
 
