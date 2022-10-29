@@ -258,7 +258,7 @@ As you can see, `x` and `y` are pointing to the same object, and it is not consi
 
 ### Integer interning
 
-For some reason, the core development teams decided that those between `-5` and `128` are in the "interning range". However, depending on specific implementations, the range might vary. These integers are used much more frequently than others, so at startup, Python materializes and caches them in memory. Whenever you try to assign a value in this range to a variable, Python will point the variable to the corresponding cached copy instead of creating a new object.
+For some reason, the core development teams decided that those between `-5` and `256` are in the "interning range". However, depending on specific implementations, the range might vary. These integers are used much more frequently than others, so at startup, Python materializes and caches them in memory. Whenever you try to assign a value in this range to a variable, Python will point the variable to the corresponding cached copy instead of creating a new object.
 
 Let's try some examples to verify this for integers within the "interning range".
 

@@ -188,6 +188,7 @@ Text emphases are straighforward.
 - `*Italic*` will make *Italic*
 - `_Italic_` wil also make _Italic_
 - `**_Bold and italic_**` will make **_Bold and italic_**
+- `***Bold and italic***` will also make **_Bold and italic_**
 - `~~Strike through~~` will make ~~Strike through~~
 
 ### Code fences
@@ -355,9 +356,9 @@ I think it's good to summarize this lengthy lesson in a few lines (not really, b
 **Emphasis**
 
 ```markdown
-Bold: **bold**
-Italic: _italic_ or *italic*
-Bold and italic: **_Bold and italic_**
+Bold: **Bold**
+Italic: _Italic_ or *Italic*
+Bold and italic: **_Bold & italic_** or ***Bold & italic***
 Strike through: ~~Strike through~~
 ```
 

@@ -19,7 +19,7 @@ layout: page
 
 ### Data types
 
-- [Python typing system](python-types)
+- [Python data types](data-types)
 - [Built-in scalar types](builtin-scalar-types)
   - [Null type](nonetype-type)
   - [Boolean type](bool-type)
