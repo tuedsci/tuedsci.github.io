@@ -154,8 +154,6 @@ For now, I cannot think of any better solution except to add another cell `md_co
 
 ```python
 # Remove the generated styles
-import re
-
 for item in to_convert:
     filename = f"{item}.md"
 
@@ -164,8 +162,12 @@ for item in to_convert:
         contents = f.read()
 
     # Remove style
-    stripped = re.sub("<style scoped>.*</style>\n", "", contents,
-                      flags=re.DOTALL)
+    pattern = "<style scoped>.*</style>\n"
+    stripped = re.sub(pattern, "", contents, flags=re.DOTALL)
+    
+    # Additional removal of blank lines
+    pattern = "\n\s*\n\s*```"
+    stripped = re.sub(pattern, "\n\n```", stripped)
 
     # Overwrite the original Markdown file
     with open(filename, "w") as f:

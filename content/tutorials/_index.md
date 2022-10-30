@@ -3,10 +3,10 @@ title: Tutorials
 layout: page
 ---
 
-## Python
+### Python
 
-- [Basic Python course](python/basic)
+[Basic Python course](python/basic)
 
-## SQL
+### SQL
 
-- [Basic SQL course](sql/basic)
+[Basic SQL course](sql/basic)

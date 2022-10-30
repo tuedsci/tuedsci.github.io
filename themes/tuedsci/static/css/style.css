@@ -182,26 +182,26 @@ h4 {
     text-align: center;
 }
 
-/* SITE NAV */
-nav {
+/* SITE #main-nav */
+#main-nav {
     float: right;
     font-size: 1em;
 }
 
-nav ul {
+#main-nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    display: inline-block;
+#main-nav ul li {
+    display: inline-flex;
 }
 
-nav a {
+#main-nav a {
     margin-left: 20px;
     color: #333;
-    display: inline-block;
+    display: inline-flex;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
@@ -237,7 +237,64 @@ nav a {
 .post .read-more {
     text-transform: uppercase;
     font-size: 15px;
-    display: inline-block;
+    display: inline-flex;
+}
+
+.post-datetime {
+    margin: 1em 0;
+}
+
+/****************************************
+* TOC
+****************************************/
+.toc {
+    background: #cddff1;
+    padding: 1em 1.5em;
+    border-radius: 5px;
+}
+
+.toc a {
+    color: #447099;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
+.toc ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+#TableOfContents ul:first-child {
+    padding-left: 0;
+}
+
+/****************************************
+* BREADCRUMB
+****************************************/
+
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding-left: 0;
+}
+
+.breadcrumb li {
+  display: inline-flex;
+  white-space: nowrap;
+}
+
+.breadcrumb li + li:before {
+  content: "›";
+  color: #666;
+  padding:  0 5px;
+}
+
+.breadcrumb li a {
+    color:  #666;
 }
 
 /****************************************
@@ -277,7 +334,7 @@ footer {
 }
 
 #portrait h4 i {
-    display: inline-block;
+    display: inline-flex;
     padding-right: 7px;
 }
 
@@ -290,15 +347,15 @@ footer {
 }
 
 .icons ul li {
-    display: inline-block;
+    display: inline-flex;
 }
 
 .icons a {
-    display: inline-block;
+    display: inline-flex;
 }
 
 .icons i {
-    display: inline-block;
+    display: inline-flex;
     font-size: 1.75rem;
     text-align: center;
     line-height: 25px;
@@ -319,7 +376,7 @@ footer {
 }
 
 #tags li {
-    display: inline-block;
+    display: inline-flex;
     padding-right: 10px;
 }
 
@@ -393,7 +450,7 @@ pre code {
         margin: 3px 0;
     }
 
-    nav {
+    #main-nav {
         float: none;
         margin-top: 9px;
         display: block;
@@ -401,7 +458,7 @@ pre code {
         text-align: center;
     }
 
-    nav a {
+    #main-nav a {
         margin: 0 10px;
     }
 

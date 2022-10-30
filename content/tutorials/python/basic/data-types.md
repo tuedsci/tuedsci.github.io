@@ -1,21 +1,30 @@
 ---
 title: Python data types
+math: true
 ---
 
-A large part of programming is dealing with data. However, machines don't understand real-life data, so our job is to represent them in ways that machines can understand through a set of pre-defined data types. In this lesson, you will learn what they are, their classification, a birds-eye view of the common data types, and an important concept called dynamic typing.
+A large part of programming is dealing with data. However, machines don't understand real-life data, so our job is to represent them in ways that machines can understand through a set of pre-defined data types. In this lesson, you will learn what they are, their classification, a birds-eye view of the common data types in Python, and an important concept called dynamic typing.
 
-## What are data types?
+## What is a data type?
 
 Formally speaking, a data type (or just type) is a set of possible values that a variable of this type can assume (called the domain) together with a set of allowed operations we can perform on it.
 
-Consider the following example. Suppose we want a variable for the number of households in a district. The real-life value for this measurement should be a natural number (or a non-negative integer). Thus, Python provides the `int` type to represent, store, and manipulate values of this kind. Formally speaking, the `int` type defines two things.
+Consider the following example. Suppose we want a variable for the number of households in a district. The real-life value for this measurement should be an integer (a non-negative integer to be more precise). Thus, Python provides the `int` type to represent, store, and manipulate values of this kind. Formally speaking, the `int` type defines two things.
 
 - A set of possible values: all integers such as `0`, `1`, `-2`, or `1000000`
-- A set of allowed operations: we can perform math operations such as `+`, `-`, `*`, and `/` on integers. However, we cannot convert an integer to uppercase or lowercase. Such operations are not allowed for integers but are for the string type.
+- A set of allowed operations: we can perform math operations such as `+`, `-`, `*`, and `/` on integers. However, we cannot convert an integer to uppercase or lowercase. Such operations are not allowed for the integer type but are for the string type.
 
 ## Programming and reality
 
-It should be noted that data types are just approximations of reality defined by a programming language, and they might not fully mirror their real-life counterparts. Take Python's `float` type for example. The `float` type is designed to represent real-numbered values such as salary, revenue, and profit. However, mathematically, there are infinitely many real numbers, which form the whole continuum. Thus, there is no way that machines (with limited memory) can represent all real numbers (with infinite precision. As a result, the domain of the `float` type is just a set of real numbers up to some given precision, not all real numbers. However, this approximation is sufficient in most practical applications.
+It should be noted that data types are just approximations of reality defined by a programming language, and they might not fully mirror their real-life counterparts.
+
+> Ints are not integers, and floats are not reals.
+
+In most programming languages, numeric types have hard limits. For example, a 32-bit signed integer can represent a value only within the range $[-2^{31}, 2^{31} - 1]$ or $[-2147483648, 2147483647]$. If the number you want to store is outside that range, it will get [overflowed](https://en.wikipedia.org/wiki/Integer_overflow). So for very large integers, you might need to consider a "bigger" type of ints such as 64-bit or 128-bit. But again, the ranges are not unlimited, just bigger.
+
+However, in Python, the `int` type is implemented so that it can represent integers of arbitrary size, as long as they fit the memory. Thus, normally, you will not get overflowed in any applications.
+
+The `float` type (designed to represent real numbers), however, does not have that luxury. It does not only have hard limits on the range but also the precision. Mathematically, there are infinitely many real numbers, many of which have infinitely long decimal parts. Thus, there is no way to represent them all in a machine with limited memory. In Python, the `float` type is implemented using a 64-bit and can represent values up to approximately $1.798\times 10^{308}$, which is very large by the way. Beyond this value, everything is considered infinity (or `inf`). Thus, technically, the domain of the `float` type is only a set of real numbers within some specific range and with a given precision. However, this approximation is sufficient in most practical applications.
 
 ## Built-in and user-defined types
 
@@ -41,7 +50,7 @@ Python provides the `NoneType` type whose domain contains only a single value `N
 
 ### Truth values
 
-Python offers the `bool` types whose domain has only two possible values: `True` and `False`. This type is used to represent two-state data such as true/false, good/bad, passed/failed, success/failure, male/female, and so on.
+Python offers the `bool` type whose domain has only two possible values: `True` and `False`. This type is used to represent two-state data such as true/false, good/bad, passed/failed, success/failure, male/female, and so on.
 
 ### Numbers
 

@@ -20,19 +20,19 @@ layout: page
 ### Data types
 
 - [Python data types](data-types)
-- [Built-in scalar types](builtin-scalar-types)
-  - [Null type](nonetype-type)
-  - [Boolean type](bool-type)
-  - [Integer type](int-type)
-  - [Floating-point type](float-type)
+- Built-in scalar types
+  - [None](none)
+  - [Booleans](booleans)
+  - [Ints](ints)
+  - [Floats](floats)
   - [Working with numbers](work-with-numbers)
-- [Built-in collection types](builtin-collection-types)
-  - [List type](list-type)
-  - [Tuple type](tuple-type)
-  - [Range type](range-type)
-  - [String type](str-type)
-  - [Dictionary type](dict-type)
-  - [Set type](set-type)
+- Built-in collection types
+  - [Lists](lists)
+  - [Tuples](tuples)
+  - [Ranges](ranges)
+  - [Strings](strings)
+  - [Dictionaries](dicts)
+  - [Sets](sets)
 
 ### Control flows
 

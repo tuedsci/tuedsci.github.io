@@ -1,0 +1,8 @@
+<div>
+    <ul id="tags">
+        {{ range . }}
+        <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ .
+            }}</a></li>
+        {{ end }}
+    </ul>
+</div>

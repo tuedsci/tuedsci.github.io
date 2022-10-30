@@ -1,21 +1,24 @@
 {{ define "main" }}
 <main id="main" class="post" role="main">
-    {{ partial "post-datetime" . }}
-
+    
+    {{ if not .Params.nobreadcrumb }}
+    {{ partial "breadcrumb.html" . }}
+    {{ end }}
     <article>
         <h1>{{ .Title }}</h1>
+        
+        {{ partial "post-datetime" . }}
+
+        {{ if not .Params.notoc }}
+        <aside class="toc">
+            {{ .TableOfContents }}
+        </aside>
+        {{ end }}
         <div>
             {{ .Content }}
         </div>
         {{ with .Params.tags }}
-        <div>
-            <ul id="tags">
-                {{ range . }}
-                <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ .
-                    }}</a></li>
-                {{ end }}
-            </ul>
-        </div>
+        {{ partial "tags.html" .}}
         {{ end }}
     </article>
 </main>

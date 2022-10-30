@@ -7,7 +7,7 @@
     </div>
 
     {{ with .Site.Params.menu }}
-    <nav>
+    <nav id="main-nav">
         <ul>
             {{ range . }}
             <li><a href="{{ .url | relURL }}">{{ .name }}</a></li>
