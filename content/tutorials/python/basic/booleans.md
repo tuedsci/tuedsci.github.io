@@ -57,13 +57,13 @@ bool
 We can also get a `bool` from an expression that produces a bool. Normally, it is a comparison. Here is the list of comparison operators in Python, and they are very intuitive.
 
 ```python
-is 	# the same identity
-== 	# is equal
-!= 	# is not equal
->	# greater than
->=	# greater than or equal
-<	# less than
-<= 	# less than or equal
+is  # the same identity
+==  # is equal
+!=  # is not equal
+>   # greater than
+>=  # greater than or equal
+<   # less than
+<=  # less than or equal
 ```
 
 Let's try some examples.
@@ -248,7 +248,9 @@ To convert an object to a bool, we use the `bool()` function. Here is a rule of 
 
 Let's see some examples.
 
-From `None`
+### From None
+
+Converting `None` to bool will always produce `False`.
 
 ```python
 bool(None)
@@ -258,7 +260,9 @@ bool(None)
 False
 ```
 
-From ints
+### From ints
+
+Converting from int to bool will produce `False` for `0` and `True` for any non-zero value.
 
 ```python
 bool(0)
@@ -276,7 +280,9 @@ bool(-1)
 True
 ```
 
-From floats
+### From floats
+
+Converting from float to int is similar to the case of converting from int to bool.
 
 ```python
 bool(0.0)
@@ -294,7 +300,9 @@ bool(1.5)
 True
 ```
 
-From strings
+### From strings
+
+When converting from string to int, empty strings will produce `False`, and non-empty strings will produce `True`.
 
 ```python
 bool("")
@@ -312,7 +320,9 @@ bool("Hello")
 True
 ```
 
-From lists
+### From other types
+
+When converting collections such as lists, tuples, or sets, to bool, empty collections will produce `False`, and non-empty collections will produce `True`.
 
 ```python
 bool([])
@@ -347,4 +357,4 @@ else:
 There is no student
 ```
 
-Here `students` is an empty `list`, not a `bool`. So to make `if students` work, Python has to convert `students` to a `bool`, and from the previous section, you know that an empty list, when converted to `bool`, will produce `False`. That's why we see `There is no student` printed out.
+Here `students` is an empty `list`, not a `bool`. So to make `if students:` work, Python has to convert `students` to a `bool`, and from the previous section, you know that an empty list, when converted to `bool`, will produce `False`. That's why we see `There is no student` printed out.
