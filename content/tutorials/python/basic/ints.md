@@ -382,7 +382,7 @@ ValueError: invalid literal for int() with base 10: '1,000'
 ## Some fun examples
 
 ### Odd or even?
-Let's say we are given an integer `x` and have to decide whether it is an odd or an even number. How can we solve that?
+Let's say we are given an integer `x` and have to decide whether it is an odd or an even number. How can we solve this?
 
 Recall that an even number is divisible by `2`, but an odd number is not. What does it mean "`x` is divisible by `2`" in Python? It means the remainder `x % 2` is zero. So we have a solution as follows.
 
@@ -398,7 +398,7 @@ else:
 Even
 ```
 
-Here we see `Even` printed out because `x = 6` is indeed an even number. In the `if` part, `6 % 2` produces `0`, so the comparison is evaluated as `True`. If you change `x` to `-7` for example, you will see `Odd` printed out.
+Here we see `Even` printed out because `x = 6` is indeed an even number. In the `if` part, `6 % 2` produces `0`, so the comparison (equivalent to `0 == 0`) is evaluated as `True`. If you change `x` to `-7` for example, you will see `Odd` printed out.
 
 
 ```python
@@ -414,7 +414,7 @@ Odd
 ```
 ### Odd or even with implicit type casting
 
-Recall from the last lesson that `if` always expect a bool. If the condition is not of type `bool`, Python will try to (implicitly) convert it to `bool`. So the previous example can be succinctly re-written as follows.
+Recall from the last lesson that `if` always expects a bool. If the condition is not of type `bool`, Python will try to (implicitly) convert it to `bool`. So the previous example can be succinctly re-written as follows.
 
 ```python
 x = 6
@@ -429,7 +429,7 @@ else:
 Even
 ```
 
-Here `6 % 2` gives a `0` so `if x % 2:` is equivalent to `if 0:`. Since `0` is not a bool, Python has to do a conversion, and `bool(0)` gives `False`. Thus, we have to adjust the logic and print out `"Odd"` for this case because the condition is always evaluated as `False` for even numbers, and the indented code block under the `else` part is executed, not the one under the `if` part.
+Here `6 % 2` gives a `0` so `if x % 2:` is equivalent to `if 0:`. Since `0` is not a bool, Python has to do an implicit conversion, and `bool(0)` gives `False`. Thus, we have to adjust the logic and print out `"Odd"` for this case because the condition is always evaluated as `False` for even numbers, and the indented code block under the `else` part is executed, not the one under the `if` part.
 
 Although this solution is cool, I wouldn't recommend it. It makes the code harder to read. Recall Zen of Python.
 
