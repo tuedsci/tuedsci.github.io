@@ -55,7 +55,7 @@ int
 
 ### From an int literal
 
-We can get an `int` from a direct assignment with an `int` literals.
+We can get an `int` from a direct assignment with an `int` literal.
 
 ```python
 x = 100
