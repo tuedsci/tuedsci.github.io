@@ -25,7 +25,6 @@ layout: page
   - [Booleans](booleans)
   - [Ints](ints)
   - [Floats](floats)
-  - [Working with numbers](work-with-numbers)
 - Built-in collection types
   - [Lists](lists)
   - [Tuples](tuples)

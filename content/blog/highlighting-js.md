@@ -33,7 +33,7 @@ Step 5: replace `<style-name>` in the code snippet in step 2 with the style name
 
 The collection is huge, and I did not have time to look at all the styles. However, here are the ones that I found most attractive.
 
-- Light themes: `atom-one-light`
+- Light themes: `atom-one-light`, `stackoverflow-light`
 - Dark themes: `agate`, `atom-one-dark`, `base16/decaf`, `base16/danqing`, `base16/eighties`
 
 ## Demo
