@@ -404,27 +404,37 @@ pre {
     margin: 1em 0;
 }
 
+pre code {
+    display: flex;
+    overflow-x: auto;
+    padding: 1em;
+    border: 1px;
+    border-radius: 5px;
+    background: transparent;
+}
+
 pre .language-output {
     display: block;
     overflow-x: auto;
     padding: 1em;
-    border: 1px solid #dedede;
+    border: 1px solid #eee;
     border-radius: 5px;
 }
+
 
 code {
     background: #e3e3e3;
     padding: 1px 3px;
     border-radius: 3px;
-    font-size: 0.9em;
+    font-size: 0.85em;
 }
 
-pre code {
+/*pre code {
     background: transparent;
     padding: 0;
     border-radius: 0;
 }
-
+*/
 /****************************************
 * MEDIA SCREEN
 ****************************************/
