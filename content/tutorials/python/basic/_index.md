@@ -26,8 +26,8 @@ layout: page
   - [Ints](ints)
   - [Floats](floats)
 - Built-in collection types
-  - [Lists (basic)](lists-basic)
-  - [Lists (advanced)](lists-advanced)
+  - [Lists (part 1)](lists-1)
+  - [Lists (part 2)](lists-2)
   - [Tuples](tuples)
   - [Ranges](ranges)
   - [Strings](strings)
