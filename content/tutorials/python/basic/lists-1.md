@@ -1,12 +1,14 @@
 ---
-title: Lists
+title: Lists (part 1)
 ---
 
 ## Introduction
 
 The `list` type is one of the 4 sequence types that we will learn in this series. The other three are `tuple`, `range`, and `str`. 
 
-A sequence is an order collection of elements. Each element of the sequence can be accessed using the sequence name and the position (or index) of the element. Note that Python is zero-based indexing, meaning that it starts counting from `0`, not from `1`.
+A sequence is an ordered collection of elements. Each element of the sequence can be accessed using the sequence name and the position (or index) of the element. Note that Python is zero-based indexing, meaning that it starts counting from `0`, not from `1`.
+
+Since understanding lists is important for understanding other collection types, especially sequences, I will break this topic into two parts to keep the materials in reasonable lengths. This is the first part.
 
 ## Create a list
 We create a list by listing its elements within a pair of square brackets (i.e., `[]`). The elements are separated by commas.
@@ -72,7 +74,7 @@ fruits = [
 ```
 
 ## Index a list
-Indexing a list means accessing a single element of a list using the element's position. There are two types of list indexing: read and write.
+Indexing means accessing a single element of a list by position. There are two types of list indexing: read and write.
 
 - Read indexing: we access an element, read the value, and do not change it.
 - Write indexing: we access an element and change it.
@@ -94,7 +96,7 @@ print(x)
 [1, 2, 3, 4, 5]
 ```
 
-Python starts counting at `0`, so a list of `N` elements will be indexed by `0`, `1`, ..., and `N-1`.
+Python starts counting from `0`, so a list of `N` elements will be indexed by `0`, `1`, ..., and `N-1`.
 
 ```python
 # First element (index: 0)
@@ -171,7 +173,7 @@ x
 We can index an element and overwrite it with a new value using an assignment.
 
 ```python
-# Change the first element of 99
+# Change the first element to 99
 x[0] = 99
 ```
 
@@ -412,4 +414,79 @@ x[::-1]
 ```
 
 ### Write slicing
-To be updated
+Write slicing works in a similar fashing as write indexing: we slice part of a list and overwrite (i.e., update or delete) this part.
+
+First, we create a list.
+
+```python
+# Create a list
+x = [1, 2, 3, 4, 5]
+```
+
+We can replace the first three elements of `x` with new values such as `10, 20, 30`.
+
+```python
+# Replacement
+x[:3] = [10, 20, 30]
+```
+
+```python
+# View the updated content
+x
+```
+
+```output
+[10, 20, 30, 4, 5]
+```
+
+
+If the value on the RHS is longer (or shorter) than the slice on the LHS, the list will automatically expand (or shrink) accordingly.
+
+```python
+# Overwrite a slice and expand the list
+x[:3] = ["A", "B", "C", "D"]
+```
+
+```python
+# View the updated content
+x
+```
+
+```output
+['A', 'B', 'C', 'D', 4, 5]
+```
+
+```python
+# Overwrite a slice and shrink the list
+x[:3] = ["AA"]
+```
+
+```python
+# View the updated content
+x
+```
+
+```output
+['AA', 'D', 4, 5]
+```
+
+
+We can also delete a slice of a list using the keyword `del`.
+
+```python
+# Delete first 2 elements
+del x[:2]
+```
+
+```python
+# View the updated content
+x
+```
+
+```output
+[4, 5]
+```
+
+
+## Summary
+In this lesson, you know what lists are, how to create them, and how to index and slice them using modes namely read and write. In the next lesson, you will learn more advanced topics about lists, including nested lists, list iteration, mutability, and common operations in lists.

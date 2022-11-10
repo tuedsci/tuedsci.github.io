@@ -407,7 +407,7 @@ In many languages such as C/C++, Java, or R, curly brackets (i.e., `{}`) are use
 Indentation is the spaces at the beginning of each line. A common convention is to use four spaces for one level of indentation (you use another four for the next level and so on). For now, just remember the following.
 
 - Never indent your code if you don't have a reason to do so.
-- Always indent the new line after a statement that ends with `:` such as `if`, `else`, `for`, or `while`.
+- Always indent the new line after the part of a statement that ends with `:` such as `if`, `else`, `for`, or `while`.
 
 Let's take a look at an example.
 
@@ -535,7 +535,7 @@ Again, I feel that I should summarize this wall of text into some bullet points 
 - Python use indentation to determine code blocks
 - Remember
   - Never indent your code for no reason
-  - Always indent the new line after a statement that ends with `:`
+  - Always indent the new line after the part of a statement that ends with `:`
 
 **Getting help**
 
