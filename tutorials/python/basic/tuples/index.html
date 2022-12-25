@@ -1,0 +1,142 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>Tuples</title><link rel=stylesheet href=/css/reset.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/atom-one-dark.min.css><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js></script>
+<script>hljs.highlightAll()</script><link rel=stylesheet href=/css/style.css></head><body><div class=container><header id=header class=clearfix><div id=site-info><h1 id=site-title><a href=https://tuedsci.github.io>Tue Nguyen</a></h1><p id=site-subtitle>MSc in Data Science</p></div><nav id=main-nav><ul><li><a href=/>Home</a></li><li><a href=/cv>CV</a></li><li><a href=/tutorials>Tutorials</a></li><li><a href=/blog>Blog</a></li></ul></nav></header></div><div class=container><main id=main class=post role=main><ol class=breadcrumb><li><a href=/tutorials/>Tutorials</a></li><li><a href=/tutorials/python/basic/>Basic Python course</a></li></ol><article><h1>Tuples</h1><div class=post-datetime><time>6 minutes to read</time></div><aside class=toc><nav id=TableOfContents><ul><li><a href=#introduction>Introduction</a></li><li><a href=#create-a-tuple>Create a tuple</a></li><li><a href=#indexing-and-slicing-tuples>Indexing and slicing tuples</a><ul><li><a href=#indexing>Indexing</a></li><li><a href=#slicing>Slicing</a></li></ul></li><li><a href=#nested-tuples>Nested tuples</a></li><li><a href=#tuple-iteration>Tuple iteration</a></li><li><a href=#mutability>Mutability</a></li><li><a href=#operations-on-tuples>Operations on tuples</a></li><li><a href=#unpack-tuples>Unpack tuples</a></li><li><a href=#enumeration>Enumeration</a></li></ul></nav></aside><div><h2 id=introduction>Introduction</h2><p>The <code>tuple</code> type is the next sequence type we are going to learn. Tuples are almost identical to lists, except that they are immutable. It means that tuples cannot change once created and thus they don&rsquo;t have in-place operations.</p><h2 id=create-a-tuple>Create a tuple</h2><p>To create a tuple, we put elements inside a pair of parentheses separated by commas.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>x</span> <span class=o>=</span> <span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>,</span> <span class=mi>3</span><span class=p>,</span> <span class=mi>4</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>x</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=nb>type</span><span class=p>(</span><span class=n>x</span><span class=p>))</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>(1, 2, 3, 4)
+&lt;class &#39;tuple&#39;&gt;
+</code></pre><p>If a tuple has only one element, we need to provide an extra comma. If not, Python will understand it as the integer <code>1</code> wrapped by parentheses.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>x</span> <span class=o>=</span> <span class=p>(</span><span class=mi>1</span><span class=p>,)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>x</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=nb>type</span><span class=p>(</span><span class=n>x</span><span class=p>))</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>(1,)
+&lt;class &#39;tuple&#39;&gt;
+</code></pre><p>The parentheses are optional.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>x</span> <span class=o>=</span> <span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>,</span> <span class=mi>3</span><span class=p>,</span> <span class=mi>4</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>x</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=nb>type</span><span class=p>(</span><span class=n>x</span><span class=p>))</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>(1, 2, 3, 4)
+&lt;class &#39;tuple&#39;&gt;
+</code></pre><p>If you have are too many elements to fit on one line, you arrange them in multiple lines.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>x</span> <span class=o>=</span> <span class=p>(</span><span class=s2>&#34;Apple&#34;</span><span class=p>,</span> <span class=s2>&#34;Banana&#34;</span><span class=p>,</span> <span class=s2>&#34;Orange&#34;</span><span class=p>,</span> <span class=s2>&#34;Peach&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>     <span class=s2>&#34;Guava&#34;</span><span class=p>,</span> <span class=s2>&#34;Watermelon&#34;</span><span class=p>,</span> <span class=s2>&#34;Pineapple&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>x</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=nb>type</span><span class=p>(</span><span class=n>x</span><span class=p>))</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>(&#39;Apple&#39;, &#39;Banana&#39;, &#39;Orange&#39;, &#39;Peach&#39;, &#39;Guava&#39;, &#39;Watermelon&#39;, &#39;Pineapple&#39;)
+&lt;class &#39;tuple&#39;&gt;
+</code></pre><h2 id=indexing-and-slicing-tuples>Indexing and slicing tuples</h2><p>Indexing and slicing tuples work the same way as they do with lists (because they are are all of type sequence). However, since tuples are immutable, we only have read indexing and read slicing.</p><p>First we create a tuple.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>x</span> <span class=o>=</span> <span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>,</span> <span class=mi>3</span><span class=p>,</span> <span class=mi>4</span><span class=p>,</span> <span class=mi>5</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>x</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>(1, 2, 3, 4, 5)
+</code></pre><h3 id=indexing>Indexing</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># First element</span>
+</span></span><span class=line><span class=cl><span class=n>x</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>1
+</code></pre><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Third element</span>
+</span></span><span class=line><span class=cl><span class=n>x</span><span class=p>[</span><span class=mi>2</span><span class=p>]</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>3
+</code></pre><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Last element</span>
+</span></span><span class=line><span class=cl><span class=n>x</span><span class=p>[</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>5
+</code></pre><h3 id=slicing>Slicing</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># First 3 elements</span>
+</span></span><span class=line><span class=cl><span class=n>x</span><span class=p>[:</span><span class=mi>3</span><span class=p>]</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>(1, 2, 3)
+</code></pre><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Last 3 elements</span>
+</span></span><span class=line><span class=cl><span class=n>x</span><span class=p>[</span><span class=o>-</span><span class=mi>3</span><span class=p>:]</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>(3, 4, 5)
+</code></pre><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Second to fourth elements</span>
+</span></span><span class=line><span class=cl><span class=n>x</span><span class=p>[</span><span class=mi>1</span><span class=p>:</span><span class=mi>4</span><span class=p>]</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>(2, 3, 4)
+</code></pre><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># From beginning to end with step 2</span>
+</span></span><span class=line><span class=cl><span class=n>x</span><span class=p>[::</span><span class=mi>2</span><span class=p>]</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>(1, 3, 5)
+</code></pre><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Also no out-of-range error for slicing</span>
+</span></span><span class=line><span class=cl><span class=n>x</span><span class=p>[</span><span class=mi>1</span><span class=p>:</span><span class=mi>1000</span><span class=p>]</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>(2, 3, 4, 5)
+</code></pre><h2 id=nested-tuples>Nested tuples</h2><p>Same as lists, a tuple can contains other iterables including lists and tuples.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Create a nested tuple</span>
+</span></span><span class=line><span class=cl><span class=n>x</span> <span class=o>=</span> <span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>,</span> <span class=p>(</span><span class=mi>3</span><span class=p>,</span> <span class=mi>4</span><span class=p>),</span> <span class=p>[</span><span class=mi>5</span><span class=p>,</span> <span class=mi>6</span><span class=p>])</span>
+</span></span><span class=line><span class=cl><span class=n>x</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>(1, 2, (3, 4), [5, 6])
+</code></pre><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Access third element</span>
+</span></span><span class=line><span class=cl><span class=n>x</span><span class=p>[</span><span class=mi>2</span><span class=p>]</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>(3, 4)
+</code></pre><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Access first element of third element</span>
+</span></span><span class=line><span class=cl><span class=n>x</span><span class=p>[</span><span class=mi>2</span><span class=p>][</span><span class=mi>0</span><span class=p>]</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>3
+</code></pre><h2 id=tuple-iteration>Tuple iteration</h2><p>Same as lists, we can use a <code>for</code> loop to iterate through a tuple.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Creat a tuple</span>
+</span></span><span class=line><span class=cl><span class=n>x</span> <span class=o>=</span> <span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>,</span> <span class=mi>3</span><span class=p>,</span> <span class=mi>4</span><span class=p>,</span> <span class=mi>5</span><span class=p>)</span>
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Print out squares of elements of x</span>
+</span></span><span class=line><span class=cl><span class=k>for</span> <span class=n>e</span> <span class=ow>in</span> <span class=n>x</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=nb>print</span><span class=p>(</span><span class=n>e</span><span class=o>**</span><span class=mi>2</span><span class=p>)</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>1
+4
+9
+16
+25
+</code></pre><h2 id=mutability>Mutability</h2><p>Tuples are immutable, meaning that they cannot change once created. Each element of a tuple hold a reference to an object, and that reference stays the same forever.</p><p>You cannot reassign a new value to an element of the tuple <code>x</code>. For example, running <code>x[0] = 100</code> will produces an error.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>TypeError: &#39;tuple&#39; object does not support item assignment
+</span></span></code></pre></div><p>However, if one of the element of <code>x</code> is of mutable type (e.g., a list), then we can still modify that mutable object. Let&rsquo;s consider an example.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Create a tuple containing a list</span>
+</span></span><span class=line><span class=cl><span class=n>x</span> <span class=o>=</span> <span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>,</span> <span class=p>[</span><span class=mi>3</span><span class=p>,</span> <span class=mi>4</span><span class=p>])</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>x</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=nb>type</span><span class=p>(</span><span class=n>x</span><span class=p>))</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>(1, 2, [3, 4])
+&lt;class &#39;tuple&#39;&gt;
+</code></pre><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># See the ID of each element of x</span>
+</span></span><span class=line><span class=cl><span class=k>for</span> <span class=n>e</span> <span class=ow>in</span> <span class=n>x</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=nb>print</span><span class=p>(</span><span class=nb>id</span><span class=p>(</span><span class=n>e</span><span class=p>))</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>2151585048880
+2151585048912
+2151665796864
+</code></pre><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Now the change the first element of </span>
+</span></span><span class=line><span class=cl><span class=c1># the inner list to 99 and double check</span>
+</span></span><span class=line><span class=cl><span class=c1># (This is possible because lists are mutable)</span>
+</span></span><span class=line><span class=cl><span class=n>x</span><span class=p>[</span><span class=o>-</span><span class=mi>1</span><span class=p>][</span><span class=mi>0</span><span class=p>]</span> <span class=o>=</span> <span class=mi>99</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>x</span><span class=p>)</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>(1, 2, [99, 4])
+</code></pre><p>You might think that the tuple <code>x</code> has changed, but it has not. Tuples are immutable, and <code>x</code> still hold the same references to the old underlying objects. What has happened is that the underlying object (the inner list in this case) has changed, not the tuple <code>x</code>. We can verify it by print out the IDs of the elements of <code>x</code>.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># IDs stay the same</span>
+</span></span><span class=line><span class=cl><span class=k>for</span> <span class=n>e</span> <span class=ow>in</span> <span class=n>x</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=nb>print</span><span class=p>(</span><span class=nb>id</span><span class=p>(</span><span class=n>e</span><span class=p>))</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>2151585048880
+2151585048912
+2151665796864
+</code></pre><h2 id=operations-on-tuples>Operations on tuples</h2><p>Since tuples are immutale, we don&rsquo;t have inplace operations. Apart from that, we have all the regular operations that lists have. See [Lists (part 2)] for more details.</p><h2 id=unpack-tuples>Unpack tuples</h2><p>Unpacking tuples works the same as it does with lists.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Create a tuple containing info about date</span>
+</span></span><span class=line><span class=cl><span class=n>my_date</span> <span class=o>=</span> <span class=p>(</span><span class=mi>2022</span><span class=p>,</span> <span class=mi>4</span><span class=p>,</span> <span class=mi>1</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>my_date</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>(2022, 4, 1)
+</code></pre><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Unpack all elements</span>
+</span></span><span class=line><span class=cl><span class=n>y</span><span class=p>,</span> <span class=n>m</span><span class=p>,</span> <span class=n>d</span> <span class=o>=</span> <span class=n>my_date</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>y</span><span class=p>,</span> <span class=n>m</span><span class=p>,</span> <span class=n>d</span><span class=p>)</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>2022 4 1
+</code></pre><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Get date and month only</span>
+</span></span><span class=line><span class=cl><span class=n>_</span><span class=p>,</span> <span class=n>m</span><span class=p>,</span> <span class=n>d</span> <span class=o>=</span> <span class=n>my_date</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>m</span><span class=p>,</span> <span class=n>d</span><span class=p>)</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>4 1
+</code></pre><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Get year only</span>
+</span></span><span class=line><span class=cl><span class=n>y</span><span class=p>,</span> <span class=o>*</span><span class=n>_</span> <span class=o>=</span> <span class=n>my_date</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>y</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=mi>2022</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>2022
+</code></pre><pre tabindex=0><code class=language-output data-lang=output>2022
+</code></pre><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Get date only</span>
+</span></span><span class=line><span class=cl><span class=o>*</span><span class=n>_</span><span class=p>,</span> <span class=n>d</span> <span class=o>=</span> <span class=n>my_date</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>d</span><span class=p>)</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>1
+</code></pre><h2 id=enumeration>Enumeration</h2><p>When iterating through a sequence, we might want to access not only the elements but also their indexes. If so, we can use the function <code>enumerate()</code></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Create a tuple</span>
+</span></span><span class=line><span class=cl><span class=n>runners</span> <span class=o>=</span> <span class=p>(</span><span class=s2>&#34;John&#34;</span><span class=p>,</span> <span class=s2>&#34;Tom&#34;</span><span class=p>,</span> <span class=s2>&#34;Harry&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>runners</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>(&#39;John&#39;, &#39;Tom&#39;, &#39;Harry&#39;)
+</code></pre><p>Without <code>enumerate()</code>, we can only access the elements.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>for</span> <span class=n>r</span> <span class=ow>in</span> <span class=n>runners</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=nb>print</span><span class=p>(</span><span class=n>r</span><span class=p>)</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>John
+Tom
+Harry
+</code></pre><p>With <code>enumerate()</code>, in each iteration, Python will return a two-element tuples: the first element is the index and the second element will be the value.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>for</span> <span class=n>r</span> <span class=ow>in</span> <span class=nb>enumerate</span><span class=p>(</span><span class=n>runners</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=nb>print</span><span class=p>(</span><span class=n>r</span><span class=p>)</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>(0, &#39;John&#39;)
+(1, &#39;Tom&#39;)
+(2, &#39;Harry&#39;)
+</code></pre><p>Thus, we can write something like.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>for</span> <span class=n>r</span> <span class=ow>in</span> <span class=nb>enumerate</span><span class=p>(</span><span class=n>runners</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=nb>print</span><span class=p>(</span><span class=sa>f</span><span class=s2>&#34;</span><span class=si>{</span><span class=n>r</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span><span class=si>}</span><span class=s2> is ranked </span><span class=si>{</span><span class=n>r</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>+</span> <span class=mi>1</span><span class=si>}</span><span class=s2>&#34;</span><span class=p>)</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>John is ranked 1
+Tom is ranked 2
+Harry is ranked 3
+</code></pre><p>However, if the returned tuple at each iteration, the code will be more intutive.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>for</span> <span class=n>i</span><span class=p>,</span> <span class=n>runner</span> <span class=ow>in</span> <span class=nb>enumerate</span><span class=p>(</span><span class=n>runners</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=nb>print</span><span class=p>(</span><span class=sa>f</span><span class=s2>&#34;</span><span class=si>{</span><span class=n>runner</span><span class=si>}</span><span class=s2> is ranked </span><span class=si>{</span><span class=n>i</span> <span class=o>+</span> <span class=mi>1</span><span class=si>}</span><span class=s2>&#34;</span><span class=p>)</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>John is ranked 1
+Tom is ranked 2
+Harry is ranked 3
+</code></pre></div></article></main></div><div class=footer-wrapper><div class=container><footer><p>&copy; 2022 <a href=https://tuedsci.github.io>Tue Nguyen</a></p></footer></div></div></body></html>
