@@ -40,7 +40,7 @@ print(type(x))
 (1, 2, 3, 4)
 <class 'tuple'>
 ```
-If you have are too many elements to fit on one line, you arrange them in multiple lines.
+If you have too many elements to fit on one line, you arrange them in multiple lines.
 
 ```python
 x = ("Apple", "Banana", "Orange", "Peach",
@@ -54,9 +54,9 @@ print(type(x))
 <class 'tuple'>
 ```
 ## Indexing and slicing tuples
-Indexing and slicing tuples work the same way as they do with lists (because they are are all of type sequence). However, since tuples are immutable, we only have read indexing and read slicing.
+Indexing and slicing tuples work the same way as they do with lists (because they are all of type sequence). However, since tuples are immutable, we only have read indexing and read slicing.
 
-First we create a tuple.
+First, we create a tuple.
 
 ```python
 x = (1, 2, 3, 4, 5)
@@ -147,7 +147,7 @@ x[1:1000]
 
 
 ## Nested tuples
-Same as lists, a tuple can contains other iterables including lists and tuples.
+Same as with lists, a tuple can contain other iterables including lists and tuples.
 
 ```python
 # Create a nested tuple
@@ -169,7 +169,7 @@ x[2]
 ```
 
 ```python
-# Access first element of third element
+# Access the first element of the third element
 x[2][0]
 ```
 
@@ -207,7 +207,7 @@ You cannot reassign a new value to an element of the tuple `x`. For example, run
 TypeError: 'tuple' object does not support item assignment
 ```
 
-However, if one of the element of `x` is of mutable type (e.g., a list), then we can still modify that mutable object. Let's consider an example.
+However, if one of the elements of `x` is of mutable type (e.g., a list), then we can still modify that mutable object. Let's consider an example.
 
 ```python
 # Create a tuple containing a list
@@ -232,7 +232,7 @@ for e in x:
 ```
 
 ```python
-# Now the change the first element of 
+# Now change the first element of 
 # the inner list to 99 and double check
 # (This is possible because lists are mutable)
 x[-1][0] = 99
@@ -241,7 +241,7 @@ print(x)
 ```output
 (1, 2, [99, 4])
 ```
-You might think that the tuple `x` has changed, but it has not. Tuples are immutable, and `x` still hold the same references to the old underlying objects. What has happened is that the underlying object (the inner list in this case) has changed, not the tuple `x`. We can verify it by print out the IDs of the elements of `x`.
+You might think that the tuple `x` has changed, but it has not. Tuples are immutable, and `x` still holds the same references to the old underlying objects. What has happened is that the underlying object (the inner list in this case) has changed, not the tuple `x`. We can verify it by printing out the IDs of the elements of `x`.
 
 ```python
 # IDs stay the same
@@ -254,7 +254,7 @@ for e in x:
 2151665796864
 ```
 ## Operations on tuples
-Since tuples are immutale, we don't have inplace operations. Apart from that, we have all the regular operations that lists have. See [Lists (part 2)] for more details.
+Since tuples are immutable, we don't have in-place operations. Apart from that, we have all the regular operations that lists have. See [Lists (part 2)] for more details.
 
 ## Unpack tuples
 Unpacking tuples works the same as it does with lists.
@@ -334,7 +334,7 @@ John
 Tom
 Harry
 ```
-With `enumerate()`, in each iteration, Python will return a two-element tuples: the first element is the index and the second element will be the value. 
+With `enumerate()`, in each iteration, Python will return a two-element tuple: the first element is the index and the second element will be the value. 
 
 ```python
 for r in enumerate(runners):
@@ -345,7 +345,7 @@ for r in enumerate(runners):
 (1, 'Tom')
 (2, 'Harry')
 ```
-Thus, we can write something like.
+Thus, we can write something like this.
 
 ```python
 for r in enumerate(runners):
@@ -356,7 +356,7 @@ John is ranked 1
 Tom is ranked 2
 Harry is ranked 3
 ```
-However, if the returned tuple at each iteration, the code will be more intutive.
+However, if the returned tuple at each iteration, the code will be more intuitive.
 
 ```python
 for i, runner in enumerate(runners):
