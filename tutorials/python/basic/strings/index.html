@@ -1,0 +1,111 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>Strings</title><link rel=stylesheet href=/css/reset.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/atom-one-dark.min.css><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js></script>
+<script>hljs.highlightAll()</script><link rel=stylesheet href=/css/style.css></head><body><div class=container><header id=header class=clearfix><div id=site-info><h1 id=site-title><a href=https://tuedsci.github.io>Tue Nguyen</a></h1><p id=site-subtitle>MSc in Data Science</p></div><nav id=main-nav><ul><li><a href=/>Home</a></li><li><a href=/cv>CV</a></li><li><a href=/tutorials>Tutorials</a></li><li><a href=/blog>Blog</a></li></ul></nav></header></div><div class=container><main id=main class=post role=main><ol class=breadcrumb><li><a href=/tutorials/>Tutorials</a></li><li><a href=/tutorials/python/basic/>Basic Python course</a></li></ol><article><h1>Strings</h1><div class=post-datetime><time>5 minutes to read</time></div><aside class=toc><nav id=TableOfContents><ul><li><a href=#introduction>Introduction</a></li><li><a href=#create-a-string>Create a string</a></li><li><a href=#indexing-and-slicing>Indexing and slicing</a></li><li><a href=#string-iteration>String iteration</a></li><li><a href=#conversion-to-string>Conversion to string</a></li><li><a href=#mutablity>Mutablity</a></li><li><a href=#order-of-characters>Order of characters</a></li><li><a href=#operations-on-a-string>Operations on a string</a></li></ul></nav></aside><div><h2 id=introduction>Introduction</h2><p>A string is an immutable sequence of Unicode characters such as <code>"Hello"</code> or <code>"Python is fun"</code>. Python does not distinguish between characters and strings. There is only the string type, not the character type. A single character is a string of length 1.</p><h2 id=create-a-string>Create a string</h2><p>To create a string, we typically wrap it in a pair of double quotes.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>s</span> <span class=o>=</span> <span class=s2>&#34;Hello&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>s</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=nb>type</span><span class=p>(</span><span class=n>s</span><span class=p>))</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>Hello
+&lt;class &#39;str&#39;&gt;
+</code></pre><p>However, there are more ways for you to create a string in Python.</p><ul><li>Single quotes: <code>'hello'</code></li><li>Double quotes: <code>"hello"</code></li><li>Triple single quotes: <code>'''hello'''</code></li><li>Triple double quotes: <code>"""hello"""</code></li></ul><p>In general, they are the same. However, in some cases, using one might be more convenient than the others (more on this later).</p><p>First, to see that all types of quotes producing the same results, we will create 4 strings using 4 different ways and compare them.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Create 4 strings</span>
+</span></span><span class=line><span class=cl><span class=n>s1</span> <span class=o>=</span> <span class=s1>&#39;hello&#39;</span>
+</span></span><span class=line><span class=cl><span class=n>s2</span> <span class=o>=</span> <span class=s2>&#34;hello&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>s3</span> <span class=o>=</span> <span class=s1>&#39;&#39;&#39;hello&#39;&#39;&#39;</span>
+</span></span><span class=line><span class=cl><span class=n>s4</span> <span class=o>=</span> <span class=s2>&#34;&#34;&#34;hello&#34;&#34;&#34;</span>
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Compare them</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>s1</span> <span class=o>==</span> <span class=n>s2</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>s1</span> <span class=o>==</span> <span class=n>s3</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>s1</span> <span class=o>==</span> <span class=n>s4</span><span class=p>)</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>True
+True
+True
+</code></pre><p>We often use double quotes when our string contains single quotes.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Use double quotes </span>
+</span></span><span class=line><span class=cl><span class=c1># if your string contains single quotes</span>
+</span></span><span class=line><span class=cl><span class=s2>&#34;He&#39;s a good man&#34;</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>&#34;He&#39;s a good man&#34;
+</code></pre><p>You can still use single quotes in this case, but you need to escape the single quote inside the string using <code>\</code> character. If not, Python will interpret that quote as the ending quote, and the part <code>s a good man'</code> will not be part of the string. As a result, you will get an error.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># This also works, but it&#39;s ugly</span>
+</span></span><span class=line><span class=cl><span class=s1>&#39;He</span><span class=se>\&#39;</span><span class=s1>s a good man&#39;</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>&#34;He&#39;s a good man&#34;
+</code></pre><p>Likewise, use single quotes if your string contains double quotes.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=s1>&#39;He said: &#34;I am a good man&#34;&#39;</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>&#39;He said: &#34;I am a good man&#34;&#39;
+</code></pre><p>Triple quotes (both single triple and double triple) are often used for strings that span on multiple lines because they preserve the newline character (i.e., <code>"\n"</code>). They are very convenient for writing SQL queries.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=n>q</span> <span class=o>=</span> <span class=s2>&#34;&#34;&#34;
+</span></span></span><span class=line><span class=cl><span class=s2>select
+</span></span></span><span class=line><span class=cl><span class=s2>    name,
+</span></span></span><span class=line><span class=cl><span class=s2>    address,
+</span></span></span><span class=line><span class=cl><span class=s2>    email
+</span></span></span><span class=line><span class=cl><span class=s2>    from employee
+</span></span></span><span class=line><span class=cl><span class=s2>where 
+</span></span></span><span class=line><span class=cl><span class=s2>    (salary &gt;= 50000)
+</span></span></span><span class=line><span class=cl><span class=s2>    and (country = &#39;UK&#39;)
+</span></span></span><span class=line><span class=cl><span class=s2>&#34;&#34;&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>q</span><span class=p>)</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>
+select
+    name,
+    address,
+    email
+    from employee
+where 
+    (salary &gt;= 50000)
+    and (country = &#39;UK&#39;)
+</code></pre><h2 id=indexing-and-slicing>Indexing and slicing</h2><p>Since a string is a sequence, the indexing and slicing work exactly as it does with lists or tuples. Each character is an element of the sequence.</p><p>First, we create a string.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Suppose you have a product code</span>
+</span></span><span class=line><span class=cl><span class=n>code</span> <span class=o>=</span> <span class=s2>&#34;VN_20230102_ABCXYZ&#34;</span>
+</span></span></code></pre></div><p>Indexing a string gives you a character, which is a string of length 1.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># First character</span>
+</span></span><span class=line><span class=cl><span class=n>code</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>&#39;V&#39;
+</code></pre><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># 4th character</span>
+</span></span><span class=line><span class=cl><span class=n>code</span><span class=p>[</span><span class=mi>3</span><span class=p>]</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>&#39;2&#39;
+</code></pre><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Last character</span>
+</span></span><span class=line><span class=cl><span class=n>code</span><span class=p>[</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>&#39;Z&#39;
+</code></pre><p>Slicing a string gives you a substring of the original one.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># First 2 characters</span>
+</span></span><span class=line><span class=cl><span class=n>code</span><span class=p>[:</span><span class=mi>2</span><span class=p>]</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>&#39;VN&#39;
+</code></pre><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Last 6 characters</span>
+</span></span><span class=line><span class=cl><span class=n>code</span><span class=p>[</span><span class=o>-</span><span class=mi>6</span><span class=p>:]</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>&#39;ABCXYZ&#39;
+</code></pre><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># 4th to 11th</span>
+</span></span><span class=line><span class=cl><span class=n>code</span><span class=p>[</span><span class=mi>3</span><span class=p>:</span><span class=mi>11</span><span class=p>]</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>&#39;20230102&#39;
+</code></pre><h2 id=string-iteration>String iteration</h2><p>Same as with lists or tuples, we can use a <code>for</code> loop to iterate through each character of a string.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># Create a string</span>
+</span></span><span class=line><span class=cl><span class=n>s</span> <span class=o>=</span> <span class=s2>&#34;Hello&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># Iterate through each character and print</span>
+</span></span><span class=line><span class=cl><span class=k>for</span> <span class=n>c</span> <span class=ow>in</span> <span class=n>s</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>    <span class=nb>print</span><span class=p>(</span><span class=n>c</span><span class=p>)</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>H
+e
+l
+l
+o
+</code></pre><h2 id=conversion-to-string>Conversion to string</h2><p>We use <code>str()</code> function to convert objects from other types to the string type.</p><p>Convert from <code>bool</code> to <code>str</code>.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=nb>str</span><span class=p>(</span><span class=kc>True</span><span class=p>)</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>&#39;True&#39;
+</code></pre><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=nb>str</span><span class=p>(</span><span class=kc>False</span><span class=p>)</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>&#39;False&#39;
+</code></pre><p>Convert from <code>int</code> to <code>str</code>.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=nb>str</span><span class=p>(</span><span class=mi>10</span><span class=p>)</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>&#39;10&#39;
+</code></pre><p>Convert from <code>float</code> to <code>str</code>.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=nb>str</span><span class=p>(</span><span class=mf>2.5</span><span class=p>)</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>&#39;2.5&#39;
+</code></pre><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=nb>str</span><span class=p>(</span><span class=mf>1.5e6</span><span class=p>)</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>&#39;1500000.0&#39;
+</code></pre><p>Convert from <code>list</code> to <code>str</code>.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=nb>str</span><span class=p>([</span><span class=mi>1</span><span class=p>,</span><span class=mi>2</span><span class=p>,</span><span class=mi>3</span><span class=p>])</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>&#39;[1, 2, 3]&#39;
+</code></pre><h2 id=mutablity>Mutablity</h2><p>Strings are immutable, meaning they cannot change once created. If <code>s</code> is a string, you will get an error when trying to modify it such as <code>s[0] = "B"</code>.</p><h2 id=order-of-characters>Order of characters</h2><p>Under the hood, each character is encoded by an integer. Thus, comparing characters is in fact comparing their underlying integer codes. According to Unicode</p><ul><li>Letters <code>A-Z</code> are encoded with integers <code>65-90</code></li><li>Letters <code>a-z</code> are encoded with integers <code>97-122</code></li></ul><p>We use <code>ord()</code> function to get the underlying code for a character.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=nb>ord</span><span class=p>(</span><span class=s2>&#34;A&#34;</span><span class=p>))</span> <span class=c1># 65</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=nb>ord</span><span class=p>(</span><span class=s2>&#34;Z&#34;</span><span class=p>))</span> <span class=c1># 90</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=nb>ord</span><span class=p>(</span><span class=s2>&#34;a&#34;</span><span class=p>))</span> <span class=c1># 97</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=nb>ord</span><span class=p>(</span><span class=s2>&#34;z&#34;</span><span class=p>))</span> <span class=c1># 122</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>65
+90
+97
+122
+</code></pre><p>Thus, <code>A &lt; B</code> but <code>a > B</code>. Let&rsquo;s see more examples.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;BOB&#34;</span> <span class=o>&lt;</span> <span class=s2>&#34;BILL&#34;</span><span class=p>)</span> <span class=c1># False because O &gt; I</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;MARK&#34;</span> <span class=o>&lt;</span> <span class=s2>&#34;MARY&#34;</span><span class=p>)</span> <span class=c1># True because K &lt; Y</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=s2>&#34;Happy&#34;</span> <span class=o>&lt;</span> <span class=s2>&#34;beautiful&#34;</span><span class=p>)</span> <span class=c1># True because H &lt; b (not B)</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>False
+True
+True
+</code></pre><p>A good practice when comparing strings is to convert them to the same case (either lower or upper) first, then do the comparison.</p><p>The inverse function of <code>ord()</code> is <code>chr()</code>, which takes an integer as input and returns the corresponding character.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=nb>chr</span><span class=p>(</span><span class=mi>65</span><span class=p>))</span> <span class=c1># Letter A</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=nb>chr</span><span class=p>(</span><span class=mi>80</span><span class=p>))</span> <span class=c1># Letter P</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=nb>chr</span><span class=p>(</span><span class=mi>2000</span><span class=p>))</span> <span class=c1># Some weird character</span>
+</span></span></code></pre></div><pre tabindex=0><code class=language-output data-lang=output>A
+P
+ߐ
+</code></pre><h2 id=operations-on-a-string>Operations on a string</h2><p>Since strings are immutable sequences, we will have all regular operations as we do with tuples. In addition, we will have special operations for Unicode strings.</p></div></article></main></div><div class=footer-wrapper><div class=container><footer><p>&copy; 2022 <a href=https://tuedsci.github.io>Tue Nguyen</a></p></footer></div></div></body></html>
