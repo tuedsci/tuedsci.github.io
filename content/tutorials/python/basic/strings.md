@@ -313,3 +313,289 @@ P
 ## Operations on a string
 Since strings are immutable sequences, we will have all regular operations as we do with tuples. In addition, we will have special operations for Unicode strings.
 
+### Regular operations
+Python's strings have all regular operations that was already covered in detail in the lessons about lists. Thus, I will not repeat them here.
+
+### String operations
+Besides operations that are common to sequences, strings have special operations dealing with Unicode characters. I will divided them into groups so that it will be easier for you to follow and remember.
+
+- Group 1: case checking
+- Group 2: case transformations
+- Group 3: substring checking
+- Group 4: white space handling
+- Group 5: string padding
+- Group 6: string splitting & joining
+- Group 7: searching and replacing
+
+Further reading
+
+- [Python's official reference](https://docs.python.org/3/library/stdtypes.html#string-methods)
+- [Advanced string processing with `re` module](https://docs.python.org/3/library/re.html)
+
+#### Group 1: case checking
+
+First we need to distinguish between cased and non-cased characters. Cased characters are letters in a language such as English, Vietnamese, or Italian. They have uppercase and lowercase form, for example, `o-O`, `a-A`, `ê-Ê`. Non-cased characters are the rest, and they have only one form, for example, `1`, `?`, `*`.
+
+`str.islower()` will return `True` if the string has at least one cased character and all the cased characters in the string are in lowercase.
+
+```python
+"hello".islower() # True
+```
+
+```output
+True
+```
+
+```python
+"hello1".islower() # True
+```
+
+```output
+True
+```
+
+```python
+"Hello".islower() # False because of H
+```
+
+```output
+False
+```
+
+```python
+"123".islower() # False because there's no cased character
+```
+
+```output
+False
+```
+
+
+Similarly, `str.isupper()` will return `True` if the string has at least one cased character and all the cased characters in the string are in uppercase.
+
+```python
+"HELLO".isupper() # True
+```
+
+```output
+True
+```
+
+```python
+"HELLO1".isupper() # True
+```
+
+```output
+True
+```
+
+```python
+"HeLLO".isupper() # False because of e
+```
+
+```output
+False
+```
+
+```python
+"123".isupper() # False because there's no cased character
+```
+
+```output
+False
+```
+
+
+`str.isalpha()` will return `True` if all characters are alphabetic letters in some language and `False` otherwise.
+
+```python
+"hello".isalpha() # True
+```
+
+```output
+True
+```
+
+```python
+"Việt".isalpha() # True
+```
+
+```output
+True
+```
+
+```python
+"Việt Nam".isalpha() # False because of the space
+```
+
+```output
+False
+```
+
+```python
+"No1".isalpha() # False because of 1
+```
+
+```output
+False
+```
+
+
+`str.isdigit()` will return `True` if all characters are digits (`0-9`) and `False` otherwise.
+
+```python
+"1234".isdigit() # True
+```
+
+```output
+True
+```
+
+```python
+"012-345".isdigit() # False because of the hyphen
+```
+
+```output
+False
+```
+
+
+`str.isalnum()` will return `True` if all characters are alphanumeric, meaning they are letters or digits. Otherwise, it returns `False`.
+
+```python
+"Number1".isalnum() # True
+```
+
+```output
+True
+```
+
+```python
+"Number 1".isalnum() # False because of the space
+```
+
+```output
+False
+```
+
+
+`str.isspace()` will return `True` if all characters are white spaces, meaning they are spaces, tabs, or new-line characters. Otherwise, it returns `False`.
+
+```python
+"    ".isspace() # True
+```
+
+```output
+True
+```
+
+```python
+" \t\n".isspace() # True
+```
+
+```output
+True
+```
+
+```python
+"""
+
+
+""".isspace() # True
+```
+
+```output
+True
+```
+
+```python
+"    X".isspace() # False because of X
+```
+
+```output
+False
+```
+
+
+Here is a more interesting example. Suppose we have a string `s` as follows.
+
+```python
+s = "The word WTO is short for World Trade Organization"
+```
+
+We can count the number of capital letters in `s`.
+
+```python
+num_caps = 0
+for c in s:
+    if c.isupper():
+        num_caps += 1
+print(num_caps)
+```
+```output
+7
+```
+#### Group 2: case transformation
+Suppose we have a string `s` as follows.
+
+```python
+s = "Python is fUn."
+s
+```
+
+```output
+'Python is fUn.'
+```
+
+```python
+# Make uppercase
+s.upper()
+```
+
+```output
+'PYTHON IS FUN.'
+```
+
+```python
+# Make lowercase
+s.lower()
+```
+
+```output
+'python is fun.'
+```
+
+```python
+# Make title 
+# (capitalize first char of each word)
+s.title()
+```
+
+```output
+'Python Is Fun.'
+```
+
+```python
+# Make sentence 
+# (capitalize first char of the string)
+s.capitalize()
+```
+
+```output
+'Python is fun.'
+```
+
+```python
+# Swap case
+s.swapcase()
+```
+
+```output
+'pYTHON IS FuN.'
+```
+
+
+#### Group 3: substring checking
+
+
+
