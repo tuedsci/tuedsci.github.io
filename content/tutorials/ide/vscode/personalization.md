@@ -15,3 +15,4 @@ This is my preferred settings for VS Code.
 - Best: `One Dark Pro Flat`
 - Next best: `One Dark Pro`, `Visual Studio Dark`
 
+## Terminals
