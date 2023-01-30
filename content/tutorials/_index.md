@@ -10,3 +10,7 @@ layout: page
 ### SQL
 
 [Basic SQL course](sql/basic)
+
+### IDEs
+
+[Visual Studio Code](ide/vscode)
