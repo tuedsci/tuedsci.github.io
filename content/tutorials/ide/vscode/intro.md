@@ -1,5 +1,6 @@
 ---
 title: Introduction
+notoc: true
 ---
 
 Visual Studio Code (or VS Code) is a free, open-source, lightweight, and cross-platform code editor developed by Microsoft based on the Electron Framework. It is one of the most popular code editors used and recommended by programmers at all levels, from beginners to seasoned professionals. Here are some of the highlighted features.
