@@ -5,7 +5,6 @@ layout: page
 
 - [Introduction](intro)
 - [Getting started](get-started)
-- [Interface](interface)
 - [Extensions](extensions)
 - [Shortcuts](shortcuts)
 - [Cool tricks](cool-tricks)

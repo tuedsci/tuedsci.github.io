@@ -10,9 +10,10 @@ This is my preferred settings for VS Code.
 - Word wrap: `on`
 - Word wrap column: `80` characters
 
-## Themes
+## Theme
 
-- Best: `One Dark Pro Flat`
-- Next best: `One Dark Pro`, `Visual Studio Dark`
+- Best choice: `One Dark Pro Flat`
+- Next best choices: `One Dark Pro`, `Visual Studio Dark`
 
-## Terminals
+## Terminal
+To be updated

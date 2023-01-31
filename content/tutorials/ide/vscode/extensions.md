@@ -24,4 +24,3 @@ This extension by (Yiyi Wang) allows you to live preview the rendering of your M
 
 - Better comments
 - Bracket Pair Colorizer
-- 
