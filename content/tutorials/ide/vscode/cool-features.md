@@ -1,5 +1,5 @@
 ---
-title: Cool tricks
+title: Cool features
 ---
 
 ## Zen mode

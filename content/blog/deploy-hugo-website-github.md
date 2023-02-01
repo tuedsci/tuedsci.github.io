@@ -1,4 +1,4 @@
----  
+---
 title: Deploy a Hugo website as a GitHub page
 date: 2022-10-20
 ---
@@ -92,7 +92,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          hugo-version: "latest"
           # extended: true
 
       - name: Build

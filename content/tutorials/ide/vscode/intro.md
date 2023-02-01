@@ -1,14 +1,29 @@
 ---
 title: Introduction
-notoc: true
 ---
 
-Visual Studio Code (or VS Code) is a free, open-source, lightweight, and cross-platform code editor developed by Microsoft based on the Electron Framework. It is one of the most popular code editors used and recommended by programmers at all levels, from beginners to seasoned professionals. Here are some of the highlighted features.
+## What is VS Code?
 
-1. **Free**. You pay nothing to use all of its features.
-1. **Cross-platform**. VS Code is available for all major operating systems, namely Windows, MacOS, and 
-1. **Integrated terminal**. The terminal is built directly into the IDE. You can launch a session right at the project folder and run command line without having to leave the IDE. You open multiple session at the same time, and you can also set the default command-line application to your favorite (for me, it is Git Bash).
-1. **Integrated debugger**. VS Code comes with a great debugger that support a wide range of languages.
-Linux. If you have to work multiple projects on different platforms, you only need one code editor
-1. **IntelliSense**. IntelliSense is an advanced feature offering smart code suggestion/completion based on the context of your code. It make writing code faster, less prone to errors, and more fun.
+Visual Studio Code (or VS Code) is a free, open-source, lightweight, and cross-platform code editor developed by Microsoft based on the Electron Framework. It is one of the most popular code editors used and recommended by programmers at all levels, from beginners to experienced professionals.
+
+## Features
+
+Here are some of the highlighted features that have made VS Code popular.
+
+1. **Free**. You pay nothing to use it.
+1. **Lightweight**. Compared to comprehensive IDEs such as PyCharm or Eclipse, VS Code is much more lightweight. It launches very quickly and gives you very smooth experience.
+1. **Cross-platform**. VS Code is available for all major operating systems, namely Windows, MacOS, and Linux.
+1. **Multiple languages**. VS Code supports a wide range of languages (e.g., Python, R, Java, C/C++) and file extensions (e.g., plain text, JSON, Markdown, HTML).
+1. **IntelliSense**. IntelliSense is an advanced feature offering smart code suggestion and completion based on the context of your code. It make writing code faster, less prone to errors, and more fun.
 1. **Extensions**. VS Code has an massive extension repository, where you can find plugins for almost anything you want such as themes, code linters, or syntax highlighters.
+1. **Command Palette**. All functionality of VS Code can be accessed using keyboard via the Command Palette. This not only allows you to code much faster but also reduce the amount of the information you have to remember (because everything can be found very quickly by searching with the Command Palette)
+1. **Other**: Of course, as a mature code editor, VS Code provides all essential features such as syntax highlighting, code refactoring, integrated terminal, debugger, and version control.
+
+## Installation
+
+To install VS Code, following the steps below.
+
+1. Google the keywords `download visual studio code`, and you will find a link to download the installer. For now, you can find it [here](https://code.visualstudio.com/download).
+1. Choose the appropriate installer for your operating system (e.g., Windows 11, 64-bit) and then download it.
+1. Click on the downloaded file and follow the instructions (mostly hit the `Next` button).
+1. After the installation process is completed, you can launch it and start writing code.

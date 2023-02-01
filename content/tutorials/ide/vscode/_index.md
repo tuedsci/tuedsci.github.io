@@ -3,9 +3,16 @@ title: Visual Studio Code
 layout: page
 ---
 
+### Basics
+
 - [Introduction](intro)
-- [Getting started](get-started)
-- [Extensions](extensions)
-- [Shortcuts](shortcuts)
-- [Cool tricks](cool-tricks)
+- [Interface](interface)
+- [Keyboard shortcuts](shortcuts)
+- [Cool features](cool-features)
+
+### Customization
+
+- [Customizing themes](themes)
+- [Code formatting](code-formatting)
+- [Working with Markdown](markdown)
 - [Personalization](personalization)
