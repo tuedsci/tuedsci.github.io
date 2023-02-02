@@ -16,3 +16,4 @@ layout: page
 - [Themes](themes)
 - [Code formatting](code-formatting)
 - [Markdown](markdown)
+- [Python](python)

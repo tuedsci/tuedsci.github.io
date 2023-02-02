@@ -19,25 +19,25 @@ This is the narrow bar at the very top. It provides a GUI for essential operatio
 
 ## Activity Bar
 
-This is the narrow bar at the leftmost. It gives you the access to different functionalities such as file explorer, search window, Git integration, debugger, and extensions. You can access each of them by clicking on the corresponding icons or by using hotkeys
+This is the narrow bar at the leftmost. It gives you access to different functionalities such as file explorer, search window, Git integration, debugger, and extensions. You can access each of them by clicking on the corresponding icons or by using hotkeys
 
 1. Open file explorer: `Ctrl + Shift + E`
-1. Open search window: `Ctrl + Shift + F`
+1. Open the search window: `Ctrl + Shift + F`
 1. Open Git integration: `Ctrl + Shift + G`
 1. Open debugger: `Ctrl + Shift + D`
-1. Open extensions window: `Ctrl + Shift + X`
+1. Open the extensions window: `Ctrl + Shift + X`
 
 ## Editor Window
 
-The editor window is the main part of the editor where you write and edit your code. It is at the center of the IDE with largest estate.
+The editor window is the main part of the editor where you write and edit your code. It is at the center of the IDE with the largest estate.
 
-If you open multiple files, they will appears as tabs. You can switching between tab using `Ctrl + Tab` (forward) or `Ctrl + Shift + Tab` (backward).
+If you open multiple files, they will appear as tabs. You can switch between tabs using `Ctrl + Tab` (forward) or `Ctrl + Shift + Tab` (backward).
 
 You can use the split mode to see multiple files simultaneously. In this mode, the window can be split vertically (side by side), horizontally (top and bottom), or a mixture of these two. However, with limited screen estate, I find two side-by-side windows to be the optimal choice for most situations.
 
 ## Side Bar
 
-The sidebar is the panel parallel to and on the right of the **Activity Bar**. It gives you different views depending on which activity you are at. In the picture above, it shows the File Explorer.
+The sidebar is the panel parallel to and on the right of the Activity Bar. It gives you different views depending on which activity you are at. For example, in the above picture, the sidebar shows the File Explorer.
 
 ## Panel
 
@@ -45,4 +45,4 @@ The Panel sits right below the Editor, and it gives you an extra workspace for o
 
 ## Status Bar
 
-The Status Bar is a narrow bar at the bottom. It shows various information about the current file or project such the position of the cursor, encoding, spacing, Git branch, etc.
+The Status Bar is a narrow bar at the bottom. It shows various information about the current file or project such as the position of the cursor, encoding, indentation and spacing, Git branch, notifications, etc.

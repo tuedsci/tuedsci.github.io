@@ -16,3 +16,27 @@ There are two types of settings: user and workspace.
 Settings can be accessed and modified either through GUI or through the JSON file. I prefer the latter although it seems intimidating at first.
 
 Both the GUI and JSON settings can be opened using the Command Palette and then searching for the keywords `settings`. The GUI settings can also be opened by pressing `Ctrl + ,`. A window with a search box will appear and let you type in the keywords to search for the setting you want.
+
+## Recommended settings
+
+Here are my personal settings for VS Code.
+
+### Editor
+
+- Font size: `18px`
+- Word wrap: `on`
+- Word wrap column: `80`
+
+Note: to show ruler for word wrap, you can modify `settings.json` as follows.
+
+```json
+{
+  "editor.rulers": [80]
+}
+```
+
+### Themes
+
+- Color theme: `One Dark Pro Flat`
+- File Icon theme: `Material Icon`
+- Product Icon theme: `Fluent Icons`
