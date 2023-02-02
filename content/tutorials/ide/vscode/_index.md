@@ -7,12 +7,12 @@ layout: page
 
 - [Introduction](intro)
 - [Interface](interface)
-- [Keyboard shortcuts](shortcuts)
+- [Settings](settings)
 - [Cool features](cool-features)
+- [Keyboard shortcuts](shortcuts)
 
 ### Customization
 
-- [Customizing themes](themes)
+- [Themes](themes)
 - [Code formatting](code-formatting)
-- [Working with Markdown](markdown)
-- [Personalization](personalization)
+- [Markdown](markdown)

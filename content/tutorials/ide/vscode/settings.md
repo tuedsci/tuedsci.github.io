@@ -1,0 +1,18 @@
+---
+title: Settings
+---
+
+Settings allow you to customize VS Code in various aspects so that you feel most comfortable and productive.
+
+## User and workspace settings
+
+There are two types of settings: user and workspace.
+
+1. **User settings** apply globally for every project whenever you open VS Code.
+1. **Workspace settings** only apply to the project that is currently open.
+
+## Open settings
+
+Settings can be accessed and modified either through GUI or through the JSON file. I prefer the latter although it seems intimidating at first.
+
+Both the GUI and JSON settings can be opened using the Command Palette and then searching for the keywords `settings`. The GUI settings can also be opened by pressing `Ctrl + ,`. A window with a search box will appear and let you type in the keywords to search for the setting you want.
