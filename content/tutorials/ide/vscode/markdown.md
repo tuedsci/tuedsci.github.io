@@ -44,8 +44,8 @@ You can preview the rendering of a Markdown document by pressing `Ctrl + K V`. A
 Although VS Code has excellent support for Markdown, you can still make it better with extensions. In this section, I will give you some useful extensions that will give you a much smoother experience when working with Markdown files. You can read more about what each of them does in the associated link.
 
 - [Markdown All In One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-- [Dictionary Completion](https://marketplace.visualstudio.com/items?itemName=yzhang.dictionary-completion)
 - [Markdown Lint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+- [Tabnine](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode)
 
 ## Settings
 
@@ -55,13 +55,7 @@ The following are my recommended settings for Markdown that I find useful.
 {
   "markdown.extension.orderedList.marker": "one",
   "[markdown]": {
-    "editor.tabCompletion": "off",
-    "editor.acceptSuggestionOnEnter": "on",
-    "editor.quickSuggestions": {
-      "other": true,
-      "comments": true,
-      "strings": true
-    }
+    "editor.acceptSuggestionOnEnter": "on"
   }
 }
 ```
