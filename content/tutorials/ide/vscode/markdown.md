@@ -45,7 +45,7 @@ Although VS Code has excellent support for Markdown, you can still make it bette
 
 - [Markdown All In One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 - [Markdown Lint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
-- [Tabnine](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode)
+- [Dictionary Completion](https://marketplace.visualstudio.com/items?itemName=yzhang.dictionary-completion)
 
 ## Settings
 
@@ -55,7 +55,13 @@ The following are my recommended settings for Markdown that I find useful.
 {
   "markdown.extension.orderedList.marker": "one",
   "[markdown]": {
-    "editor.acceptSuggestionOnEnter": "on"
+    "editor.tabCompletion": "off",
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": true,
+      "strings": true
+    }
   }
 }
 ```
