@@ -29,3 +29,7 @@ Here are some of my favorite themes.
 - Product Icon theme: Default, Fluent Icons
 
 You can explore more Color themes [here](https://vscodethemes.com/)
+
+## Other extensions
+
+- [Peacock](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock). Change the color of a workspace, thus useful when working with multiple instances of VS Code for multiple projects

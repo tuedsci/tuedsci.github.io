@@ -7,10 +7,6 @@ layout: page
 
 [Basic Python course](python/basic)
 
-### SQL
-
-[Basic SQL course](sql/basic)
-
 ### IDEs
 
 [Visual Studio Code](ide/vscode)

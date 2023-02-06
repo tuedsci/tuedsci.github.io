@@ -31,6 +31,7 @@ Note: to show ruler for word wrap, you can modify `settings.json` as follows.
 
 ```json
 {
+  // Show the ruler
   "editor.rulers": [80]
 }
 ```
@@ -40,3 +41,47 @@ Note: to show ruler for word wrap, you can modify `settings.json` as follows.
 - Color theme: `One Dark Pro Flat`
 - File Icon theme: `Material Icon`
 - Product Icon theme: `Fluent Icons`
+
+## Other settings
+
+```json
+{
+  // Format on save
+  "editor.formatOnSave": true,
+
+  // Default formatter
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Formatter for Python
+  "python.formatting.provider": "black",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+
+  // Linting with pylint
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+
+  // Spell checking
+  "cSpell.diagnosticLevel": "Hint",
+
+  // Prevent VS Code from adding trailing line
+  // when formatting a file or a Jupyter code cell
+  "files.insertFinalNewline": false,
+
+  // However, Prettier extension will add a blank EOF line
+  // You have to disable it manually for every language
+  "[markdown]": {
+    "files.insertFinalNewline": false,
+    "files.trimFinalNewlines": true
+  },
+
+  "[python]": {
+    "files.insertFinalNewline": false,
+    "files.trimFinalNewlines": true
+  },
+
+  // Default tab size = 2 spaces
+  "editor.tabSize": 2
+}
+```
