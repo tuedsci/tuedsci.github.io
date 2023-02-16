@@ -59,6 +59,10 @@ This will prevent Black from working, and since Prettier does not support Python
 }
 ```
 
+### Other useful extensions
+
+- [isort](https://marketplace.visualstudio.com/items?itemName=ms-python.isort&ssr=false#review-details)
+
 ### Other notes
 
 Sometimes, you define a long dictionary and want it to appear like this.

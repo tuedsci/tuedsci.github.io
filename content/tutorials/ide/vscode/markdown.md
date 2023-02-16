@@ -46,6 +46,29 @@ Although VS Code has excellent support for Markdown, you can still make it bette
 - [Markdown All In One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 - [Markdown Lint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
 - [Dictionary Completion](https://marketplace.visualstudio.com/items?itemName=yzhang.dictionary-completion)
+- [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf#install)
+
+Note: in order for Markdown PDF extension to export Latex properly, you should follow the below settings.
+
+Step 1: Navigate to `template.html` at
+
+```text
+C:\Users\<username>\.vscode\extensions\yzane.markdown-pdf-1.4.4\template
+```
+
+Step 2: Open it and add the following code at the end (before the closing tag `</html>`)
+
+```html
+<script
+  type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
+</script>
+```
+
+Step 3: Save
 
 ## Settings
 
