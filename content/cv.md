@@ -47,11 +47,11 @@ by _Tan Tao University - Full ride (2012 - 2016)_
 ---
 
 **Programming:** Python, R, Matlab, Octave
-**Databases:** Relational DBMS/SQL (PostgreSQL, MySQL, SQL Server), NoSQL (MongoDB)
+**Data management:** Relational DBMS/SQL (PostgreSQL, MySQL, SQL Server), NoSQL (MongoDB)
 **Big data:** Distributed computing, Spark
 **Data science**: Data wrangling, Exploratory analysis, Visualization, Machine learning
-**IDEs:** VS Code, PyCharm, Jupyter Lab, Spyder, RStudio, DataGrip, Azure Data Studio
-**Other**: Git, Command-line, Latex/Markdown, HTML/CSS, Technical writing
+**Tools & IDEs:** Git, VS Code, PyCharm, Jupyter Lab, Spyder, RStudio, DataGrip, Azure Data Studio
+**Other**: Command-line, Latex/Markdown, HTML/CSS, Technical writing
 
 ## Employment
 
