@@ -6,11 +6,11 @@ This tutorial series aims to help you learn fundamental programming skills with 
 
 ## Audience
 
-This series is designed for anyone who wants to learn how to program in Python and leverage it to perform analytics tasks. This means I assume no prior knowledge in programming or data analysis.
+This series is designed for anyone who wants to learn how to program in Python and leverage it to perform analytics tasks. No prior knowledge in programming is required.
 
 ## Author
 
-For more information about me or other resources, please visit my website at https://tuedsci.github.io.
+For more information about me or other resources, please visit my website at [https://tuedsci.github.io].
 
 ## Feedback
 
