@@ -7,95 +7,95 @@ layout: "page"
 
 ---
 
-**Full name:** Nguyen Trong Tue
-**Mobile:** (+39) 348 45 29 458
-**Email:** <tuedsci@gmail.com>
-**Website:** [https://tuedsci.github.io]
-**Github:** [https://github.com/tuedsci]
-**LinkedIn:** [https://www.linkedin.com/in/tuedsci]
+**Full name:** Nguyen Trong Tue<br>
+**Mobile:** (+39) 348 45 29 458<br>
+**Email:** <tuedsci@gmail.com><br>
+**Website:** [https://tuedsci.github.io]<br>
+**Github:** [https://github.com/tuedsci]<br>
+**LinkedIn:** [https://www.linkedin.com/in/tuedsci]<br>
 
 ## Education
 
 ---
 
-**MSc in Data Science for Economics**
-at _the University of Milan, Italy (2022 - 2024)_
-with _the Excellence Scholarship_
+**MSc in Data Science for Economics**<br>
+at _the University of Milan, Italy (2022 - 2024)_<br>
+with _the Excellence Scholarship_<br>
 
-**BSc in Finance-Banking**
-at _Tan Tao University, Vietnam (2012 - 2016)_
-with _the TTU-ITA Excellence Scholarship_
+**BSc in Finance-Banking**<br>
+at _Tan Tao University, Vietnam (2012 - 2016)_<br>
+with _the TTU-ITA Excellence Scholarship_<br>
 
 ## Awards
 
 ---
 
-**Excellence Scholarship**
-by _the University of Milan, Italy - Full ride (2022)_
+**Excellence Scholarship**<br>
+by _the University of Milan, Italy - Full ride (2022)_<br>
 
-**Erasmus Mundus Scholarship (QEM)**
-by _the European Commission - Full ride (2021)_
+**Erasmus Mundus Scholarship (QEM)**<br>
+by _the European Commission - Full ride (2021)_<br>
 
-**Mitacs Globalink Research Internship Award**
-by _Mitacs and Government of Canada - Full ride (2015)_
+**Mitacs Globalink Research Internship Award**<br>
+by _Mitacs and Government of Canada - Full ride (2015)_<br>
 
-**TTU-ITA Excellence Scholarship**
-by _Tan Tao University - Full ride (2012 - 2016)_
+**TTU-ITA Excellence Scholarship**<br>
+by _Tan Tao University - Full ride (2012 - 2016)_<br>
 
 ## Skills
 
 ---
 
-**Programming:** Python, R, Matlab, Octave
-**Data management:** Relational DBMS/SQL (PostgreSQL, MySQL, SQL Server), NoSQL (MongoDB)
-**Big data:** Distributed computing, Spark
-**Data science**: Data wrangling, Exploratory analysis, Visualization, Machine learning
-**Tools & IDEs:** Git, VS Code, PyCharm, Jupyter Lab, Spyder, RStudio, DataGrip, Azure Data Studio
-**Other**: Command-line, Latex/Markdown, HTML/CSS, Technical writing
+**Programming:** Python, R, Matlab, Octave<br>
+**Data management:** Relational DBMS/SQL (PostgreSQL, MySQL, SQL Server), NoSQL (MongoDB)<br>
+**Big data:** Distributed computing, Spark<br>
+**Data science**: Data wrangling, Exploratory analysis, Visualization, Machine Learning<br>
+**Tools:** Git, VS Code, PyCharm, Jupyter Lab, Spyder, RStudio, DataGrip, Azure Data Studio<br>
+**Other**: Command-line, Latex/Markdown, HTML/CSS, Technical writing<br>
 
 ## Employment
 
 ---
 
-**Junior Data Scientist**
-at _Trusting Social, Vietnam (2020 - 2021)_
+**Junior Data Scientist**<br>
+at _Trusting Social, Vietnam (2020 - 2021)_<br>
 
-**Research Engineer**
-at _Trusting Social, Vietnam (2017 - 2019)_
+**Research Engineer**<br>
+at _Trusting Social, Vietnam (2017 - 2019)_<br>
 
-**Data Specialist**
-at _Sentifi AG, Vietnam (2017)_
+**Data Specialist**<br>
+at _Sentifi AG, Vietnam (2017)_<br>
 
-**(Part-time) Data Analytics Instructor**
-at _Nordic Coder (2019 - 2021) & Datapot (2022)_
+**Data Analytics Instructor**<br>
+at _Nordic Coder (2019 - 2021) & Datapot (2022)_<br>
 
 ## Languages
 
 ---
 
-**Vietnamese:** native
-**English:** fluent (C1 level)
+**Vietnamese:** native<br>
+**English:** fluent (C1 level)<br>
 
 ## Certificates
 
 ---
 
-**IELTS Academic**
-_scored 7.5_
+**IELTS Academic**<br>
+_scored 7.5_<br>
 
-**GRE General**
-_scored 320 (165Q, 155V)_
+**GRE General**<br>
+_scored 320 (165Q, 155V)_<br>
 
-**Data Scientist with Python Career Track**
-by _Datacamp (22 courses)_
+**Data Scientist with Python Career Track**<br>
+by _Datacamp (22 courses)_<br>
 
-**IBM Data Science Professional Certificate**
-by _IBM, Coursera (9 courses)_
+**IBM Data Science Professional Certificate**<br>
+by _IBM, Coursera (9 courses)_<br>
 
-**Data Science: Foundations using R Specialization**
-by _Johns Hopkins University, Coursera (5 courses)_
+**Data Science: Foundations using R Specialization**<br>
+by _Johns Hopkins University, Coursera (5 courses)_<br>
 
-**Statistical Inference & Regression Models**
-_Johns Hopkins University, Coursera (2 courses)_
+**Statistical Inference & Regression Models**<br>
+_Johns Hopkins University, Coursera (2 courses)_<br>
 
-For the full list of my MOOC certificates, please visit [here](/cert)
+For the full list of my MOOC certificates, please visit [here](/cert)<br>
