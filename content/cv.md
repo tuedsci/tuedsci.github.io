@@ -10,9 +10,9 @@ layout: "page"
 **Full name:** Nguyen Trong Tue<br>
 **Mobile:** (+39) 348 45 29 458<br>
 **Email:** <tuedsci@gmail.com><br>
-**Website:** [https://tuedsci.github.io]<br>
-**Github:** [https://github.com/tuedsci]<br>
-**LinkedIn:** [https://www.linkedin.com/in/tuedsci]<br>
+**Website:** <https://tuedsci.github.io><br>
+**Github:** <https://github.com/tuedsci><br>
+**LinkedIn:** <https://www.linkedin.com/in/tuedsci><br>
 
 ## Education
 
@@ -47,7 +47,7 @@ by _Tan Tao University - Full ride (2012 - 2016)_<br>
 ---
 
 **Programming:** Python, R, Matlab, Octave<br>
-**Data management:** Relational DBMS/SQL (PostgreSQL, MySQL, SQL Server), NoSQL (MongoDB)<br>
+**Data management:** RDBMS/SQL (PostgreSQL, MySQL, SQL Server), NoSQL (MongoDB)<br>
 **Big data:** Distributed computing, Spark<br>
 **Data science**: Data wrangling, Exploratory analysis, Visualization, Machine Learning<br>
 **Tools:** Git, VS Code, PyCharm, Jupyter Lab, Spyder, RStudio, DataGrip, Azure Data Studio<br>

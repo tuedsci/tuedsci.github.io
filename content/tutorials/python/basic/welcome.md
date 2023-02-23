@@ -10,7 +10,7 @@ This series is designed for anyone who wants to learn how to program in Python a
 
 ## Author
 
-For more information about me or other resources, please visit my website at [https://tuedsci.github.io].
+For more information about me or other resources, please visit my website at <https://tuedsci.github.io>.
 
 ## Feedback
 
