@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "content/blog/index.html",
+    "href": "content/blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Welcome to my blog. It’s currently underconstruction unfortunately.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExample post\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "content/resources/network-analysis.html",
+    "href": "content/resources/network-analysis.html",
+    "title": "Network Analysis Resources",
+    "section": "",
+    "text": "Course\nInstructor\nInstitution\nPlatform\nNote\n\n\n\n\nCS224W: Machine Learning with Graphs (Fall 2023)\nJure Leskovec\nStanford University\nNA\nNA\n\n\nSocial and Economic Networks: Models and Analysis\nMatthew O. Jackson\nStanford University\nCoursera\nNA\n\n\nMethods for Network Analysis with R\nMark Hoff\nStanford University\nBookdown\nNA\n\n\nNPTEL: Social Network Analysis\nTanmoy Chakraborty\nIIT Madras\nNPTEL\nNA"
+  },
+  {
+    "objectID": "content/resources/network-analysis.html#courses",
+    "href": "content/resources/network-analysis.html#courses",
+    "title": "Network Analysis Resources",
+    "section": "",
+    "text": "Course\nInstructor\nInstitution\nPlatform\nNote\n\n\n\n\nCS224W: Machine Learning with Graphs (Fall 2023)\nJure Leskovec\nStanford University\nNA\nNA\n\n\nSocial and Economic Networks: Models and Analysis\nMatthew O. Jackson\nStanford University\nCoursera\nNA\n\n\nMethods for Network Analysis with R\nMark Hoff\nStanford University\nBookdown\nNA\n\n\nNPTEL: Social Network Analysis\nTanmoy Chakraborty\nIIT Madras\nNPTEL\nNA"
+  },
+  {
+    "objectID": "content/resources/network-analysis.html#books",
+    "href": "content/resources/network-analysis.html#books",
+    "title": "Network Analysis Resources",
+    "section": "Books",
+    "text": "Books\n\n\n\n\n\nBook\nAuthor\nPublisher\nNote\n\n\n\n\nGraph Representation Learning\nWilliam L. Hamilton\nSpringer\nNA\n\n\nNetworks, Crowds, and Markets: Reasoning About a Highly Connected World\nDavid Easley, Jon Kleinberg\nCambridge University Press\nNA\n\n\nNetwork Science\nAlbert-László Barabási\nCambridge University Press\nNA"
+  },
+  {
+    "objectID": "content/resources/network-analysis.html#papers",
+    "href": "content/resources/network-analysis.html#papers",
+    "title": "Network Analysis Resources",
+    "section": "Papers",
+    "text": "Papers\n\nPass"
+  },
+  {
+    "objectID": "content/resources/network-analysis.html#projects",
+    "href": "content/resources/network-analysis.html#projects",
+    "title": "Network Analysis Resources",
+    "section": "Projects",
+    "text": "Projects\n\nPass"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "Tue NGUYEN | tuedsci@gmail.com | https://www.linkedin.com/in/tuedsci | Milan, Italy"
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "Curriculum Vitae",
+    "section": "Education",
+    "text": "Education\n\nMSc in Data Science for Economics — University of Milan, Italy 2022 — 2024 with the Excellence Scholarship and GPA of 30 / 30\nBSc in Finance-Banking — Tan Tao University, Vietnam 2012 — 2016 with the TTU-ITA Excellence Scholarship and GPA of 3.82 / 4.0"
+  },
+  {
+    "objectID": "cv.html#experience",
+    "href": "cv.html#experience",
+    "title": "Curriculum Vitae",
+    "section": "Experience",
+    "text": "Experience\n\nBusiness Intelligence Engineer Intern — Amazon, Italy 2023 – 2024 Junior Data Scientist — Trusting Social, Vietnam 2020 – 2021 Research Engineer — Trusting Social, Vietnam 2017 – 2019 Data Specialist — Sentifi AG, Vietnam 2017"
+  },
+  {
+    "objectID": "cv.html#skills",
+    "href": "cv.html#skills",
+    "title": "Curriculum Vitae",
+    "section": "Skills",
+    "text": "Skills\n\nProgramming — Python, R, Matlab, Octave Data Engineering — ELT, Automation, Spark, SQL (PostgreSQL, MariaDB, Redshift), NoSQL (MongoDB) Data science — Machine Learning, Big Data Wrangling, Exploratory Analysis, Visualization BI & Cloud — QuickSight, Tableau, S3, Lambda, Cloud9 Other — Git, CLI, HTML, CSS, Latex, Markdown, Technical Documentation"
+  },
+  {
+    "objectID": "cv.html#awards",
+    "href": "cv.html#awards",
+    "title": "Curriculum Vitae",
+    "section": "Awards",
+    "text": "Awards\n\nExcellence Scholarship — by the University of Milan 2022 – 2024 Erasmus Mundus Scholarship (QEM) — by the European Commission 2021 Mitacs Globalink Research Internship Award — by Mitacs and Gov. of Canada 2015 TTU-ITA Excellence Scholarship — by Tan Tao University 2012 – 2016"
+  },
+  {
+    "objectID": "cv.html#languages",
+    "href": "cv.html#languages",
+    "title": "Curriculum Vitae",
+    "section": "Languages",
+    "text": "Languages\n\nVietnamese — Native English — Fluent (C1 level)"
+  },
+  {
+    "objectID": "cv.html#certificates",
+    "href": "cv.html#certificates",
+    "title": "Curriculum Vitae",
+    "section": "Certificates",
+    "text": "Certificates\n\nIELTS Academic — scored 7.5 GRE General — scored 320 (165Q, 155V) Data Scientist with Python Specialization — by Datacamp (22 courses) IBM Data Science Specialization — by IBM Coursera (9 courses) Data Science: Foundations using R Specialization — by Johns Hopkins University Coursera (5 courses) Statistical Inference — by Johns Hopkins University Coursera Regression Models — by Johns Hopkins University Coursera SQL for Data Science — by University of California Davis Coursera Data Wrangling, Analysis and AB Testing — by University of California Davis Coursera Distributed Computing with Spark SQL — by University of California Davis Coursera Computational Social Science Methods — by University of California Davis Coursera Big Data, Artificial Intelligence, and Ethics — by University of California Davis Coursera"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Tue Nguyen",
+    "section": "",
+    "text": "My name is Tue, and I am currently a master’s student in Data Science for Economics at the University of Milan in Italy. This program allows me to expand my knowledge in both theoretical aspects, such as mathematics, statistical theory, and econometrics, as well as practical applications like big data analytics and applied machine learning. Prior to this, I obtained my bachelor’s degree in Finance-Banking from Tan Tao University in Vietnam, where I gained a strong foundation in finance and quantitative analysis.\nI am passionate about data science and have had the opportunity to work in various roles in this field over the last five year of my professional experience, including Business Intelligence Engineer at Amazon, Data Scientist and Research Engineer at Trusting Social, and Data Specialist at Sentifi AG. These experiences have allowed me to apply theoretical concepts in practical settings, gaining insights into how data science drives decision-making across different industries and data applications. From developing predictive models, conducting dive-deep analyses, to creating data visualization dashboards, I’ve been involved in diverse projects that have sharpened not only my technical skills but also my business acumen.\nI consider myself a curious learner who enjoys exploring new concepts, methodologies, and technologies in the data science realm. My analytical approach to problem-solving, combined with my multidisciplinary background, enables me to tackle complex challenges from multiple angles. I am particularly interested in the intersection of data science and economics, where I can leverage my knowledge in both fields to make a positive impact on society."
+  },
+  {
+    "objectID": "content/resources/index.html",
+    "href": "content/resources/index.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Data Science\nNetwork Analysis\nProbability and Statistics"
+  },
+  {
+    "objectID": "content/blog/example-post.html",
+    "href": "content/blog/example-post.html",
+    "title": "Example post",
+    "section": "",
+    "text": "An example post."
+  }
+]
