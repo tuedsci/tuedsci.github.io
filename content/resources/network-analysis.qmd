@@ -12,7 +12,7 @@ title: Network Analysis Resources
 | [CS224W: Machine Learning with Graphs (Fall 2023)](https://web.stanford.edu/class/cs224w/) | Jure Leskovec | Stanford University | NA | NA |
 | [Social and Economic Networks: Models and Analysis](https://www.coursera.org/learn/social-economic-networks) | Matthew O. Jackson | Stanford University | Coursera | NA |
 | [Methods for Network Analysis with R](https://www.bookdown.org/markhoff/social_network_analysis/) | Mark Hoff | Stanford University | Bookdown | NA |
-| [NPTEL: Social Network Analysis](https://archive.nptel.ac.in/courses/106/106/106106239/) | Tanmoy Chakraborty | IIT Madras | NPTEL | NA |
+| [NPTEL: Social Network Analysis](https://archive.nptel.ac.in/courses/106/106/106106239/) | Tanmoy Chakraborty | IIT Madras | NPTEL | [[Book page](https://social-network-analysis.in/classes/sna_winter_22)] [[Book Playlist](https://www.youtube.com/watch?v=pVZSQpH9g0I&list=PLqGkIjcOyrGnu-v7IKyDd64Y-gd0gNlqK)] |
 
 :::
 

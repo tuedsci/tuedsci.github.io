@@ -12,7 +12,7 @@ about:
 ---
 
 My name is Tue, and I am currently a master's student in [Data Science for Economics](https://dse.cdl.unimi.it/en) at the University of Milan in Italy. This program allows me to expand my knowledge in both theoretical aspects, such as
-mathematics, statistical theory, and econometrics, as well as practical applications like big data analytics and applied machine learning. Prior to this, I obtained my bachelor's degree in Finance-Banking from [Tan Tao University](https://sbe.ttu.edu.vn/academic-programs/finance-and-banking/?lang=en) in Vietnam, where I gained a strong foundation in finance and quantitative analysis.
+mathematics, statistical theory, and econometrics, as well as practical applications like big data analytics and applied machine learning. Prior to this, I obtained my bachelor's degree in [Finance-Banking](https://sbe.ttu.edu.vn/academic-programs/finance-and-banking/?lang=en) from Tan Tao University in Vietnam, where I gained a strong foundation in finance and quantitative analysis.
 
 I am passionate about data science and have had the opportunity to work in various roles in this field over the last five year of my professional experience, including Business Intelligence Engineer at Amazon, Data Scientist and Research Engineer at Trusting Social, and Data Specialist at Sentifi AG. These experiences have allowed me to apply theoretical concepts in practical settings, gaining insights into how data science drives decision-making across different industries and data applications. From developing predictive models, conducting dive-deep analyses, to creating data visualization dashboards, I've been involved in diverse projects that have sharpened not only my technical skills but also my business acumen.
 
