@@ -1,0 +1,6 @@
+---
+title: Example post
+categories: [category1, category2]
+---
+
+An example post.

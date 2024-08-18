@@ -1,0 +1,5 @@
+---
+title: Page Not Found
+---
+
+![](img/404.png)

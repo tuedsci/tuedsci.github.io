@@ -1,0 +1,67 @@
+---
+title: "Curriculum Vitae"
+---
+
+Tue NGUYEN | <tuedsci@gmail.com> | <https://www.linkedin.com/in/tuedsci> | Milan, Italy<br><br>
+
+## Education
+
+---
+
+**MSc in Data Science for Economics** --- University of Milan, Italy [2022 --- 2024]{.cv-date}<br>
+with the Excellence Scholarship and GPA of 30 / 30<br>
+
+**BSc in Finance-Banking** --- Tan Tao University, Vietnam [2012 --- 2016]{.cv-date}<br>
+with the TTU-ITA Excellence Scholarship and GPA of 3.82 / 4.0<br>
+
+## Experience
+
+---
+
+**Business Intelligence Engineer Intern** --- Amazon, Italy [2023 -- 2024]{.cv-date}<br>
+**Junior Data Scientist** --- Trusting Social, Vietnam [2020 -- 2021]{.cv-date}<br>
+**Research Engineer** --- Trusting Social, Vietnam [2017 -- 2019]{.cv-date}<br>
+**Data Specialist** --- Sentifi AG, Vietnam [2017]{.cv-date}<br>
+
+## Skills
+
+---
+
+**Programming** --- Python, R, Matlab, Octave<br>
+**Data Engineering** --- ELT, Automation, Spark, SQL (PostgreSQL, MariaDB, Redshift), NoSQL (MongoDB)<br>
+**Data science** --- Machine Learning, Big Data Wrangling, Exploratory Analysis, Visualization<br>
+**BI & Cloud** --- QuickSight, Tableau, S3, Lambda, Cloud9<br>
+**Other** --- Git, CLI, HTML, CSS, Latex, Markdown, Technical Documentation<br>
+
+## Awards
+
+---
+
+**Excellence Scholarship** --- by the University of Milan [2022 -- 2024]{.cv-date}<br>
+**Erasmus Mundus Scholarship (QEM)** --- by the European Commission [2021]{.cv-date}<br>
+**Mitacs Globalink Research Internship Award** --- by Mitacs and Gov. of Canada [2015]{.cv-date}<br>
+**TTU-ITA Excellence Scholarship** --- by Tan Tao University [2012 -- 2016]{.cv-date}<br>
+
+## Languages
+
+---
+
+**Vietnamese** --- Native<br>
+**English** --- Fluent (C1 level)<br>
+
+## Certificates
+
+---
+
+**IELTS Academic** --- scored 7.5<br>
+**GRE General** --- scored 320 (165Q, 155V)<br>
+**[Data Scientist with Python Specialization](https://www.datacamp.com/completed/statement-of-accomplishment/track/f7a2a48b294d859de82ea81d9b01b85f33a60fe6?dc_referrer=https%3A%2F%2Fwww.google.com%2F)** --- by Datacamp (22 courses)<br>
+**[IBM Data Science Specialization](https://www.coursera.org/account/accomplishments/specialization/ZJSBEH9RGKLE)** --- by IBM Coursera (9 courses)<br>
+**[Data Science: Foundations using R Specialization](https://www.coursera.org/account/accomplishments/specialization/ACVK6D89EXAX)** --- by Johns Hopkins University Coursera (5 courses)<br>
+**[Statistical Inference](https://www.coursera.org/account/accomplishments/verify/3QVSD9RF6WUA)** --- by Johns Hopkins University Coursera<br>
+**[Regression Models](https://www.coursera.org/account/accomplishments/verify/UWFLYKRL77SM)** --- by Johns Hopkins University Coursera<br>
+**[SQL for Data Science](https://www.coursera.org/account/accomplishments/verify/ZKMB9H794KSN)** --- by University of California Davis Coursera<br>
+**[Data Wrangling, Analysis and AB Testing](https://www.coursera.org/account/accomplishments/verify/B6CCQ3Y89ETD)** --- by University of California Davis Coursera<br>
+**[Distributed Computing with Spark SQL](https://www.coursera.org/account/accomplishments/verify/GMRNEP7RJLTE)** --- by University of California Davis Coursera<br>
+**[Computational Social Science Methods](https://www.coursera.org/account/accomplishments/verify/8JYNK2GPBEE3)** --- by University of California Davis Coursera<br>
+**[Big Data, Artificial Intelligence, and Ethics](https://www.coursera.org/account/accomplishments/verify/VAFJDHP8P969)** --- by University of California Davis Coursera<br>

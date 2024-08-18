@@ -1,0 +1,10 @@
+/* CV */
+.cv-date {
+    float: right;
+}
+
+/* TABLE */
+.table a {
+    color: rgba(var(--bs-link-color-rgb)) !important;
+    text-decoration: none !important;
+}
