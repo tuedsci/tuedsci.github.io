@@ -1,47 +1,5 @@
 [
   {
-    "objectID": "content/blog/index.html",
-    "href": "content/blog/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Welcome to my blog. It’s currently underconstruction unfortunately.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExample post\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "content/resources/network-analysis.html",
-    "href": "content/resources/network-analysis.html",
-    "title": "Network Analysis Resources",
-    "section": "",
-    "text": "Course\nInstructor\nInstitution\nPlatform\nNote\n\n\n\n\nCS224W: Machine Learning with Graphs (Fall 2023)\nJure Leskovec\nStanford University\nNA\nNA\n\n\nSocial and Economic Networks: Models and Analysis\nMatthew O. Jackson\nStanford University\nCoursera\nNA\n\n\nMethods for Network Analysis with R\nMark Hoff\nStanford University\nBookdown\nNA\n\n\nNPTEL: Social Network Analysis\nTanmoy Chakraborty\nIIT Madras\nNPTEL\n[Book page] [Book Playlist]"
-  },
-  {
-    "objectID": "content/resources/network-analysis.html#courses",
-    "href": "content/resources/network-analysis.html#courses",
-    "title": "Network Analysis Resources",
-    "section": "",
-    "text": "Course\nInstructor\nInstitution\nPlatform\nNote\n\n\n\n\nCS224W: Machine Learning with Graphs (Fall 2023)\nJure Leskovec\nStanford University\nNA\nNA\n\n\nSocial and Economic Networks: Models and Analysis\nMatthew O. Jackson\nStanford University\nCoursera\nNA\n\n\nMethods for Network Analysis with R\nMark Hoff\nStanford University\nBookdown\nNA\n\n\nNPTEL: Social Network Analysis\nTanmoy Chakraborty\nIIT Madras\nNPTEL\n[Book page] [Book Playlist]"
-  },
-  {
-    "objectID": "content/resources/network-analysis.html#books",
-    "href": "content/resources/network-analysis.html#books",
-    "title": "Network Analysis Resources",
-    "section": "Books",
-    "text": "Books\n\n\n\n\n\nBook\nAuthor\nPublisher\nNote\n\n\n\n\nGraph Representation Learning\nWilliam L. Hamilton\nSpringer\nNA\n\n\nNetworks, Crowds, and Markets: Reasoning About a Highly Connected World\nDavid Easley, Jon Kleinberg\nCambridge University Press\nNA\n\n\nNetwork Science\nAlbert-László Barabási\nCambridge University Press\nNA"
-  },
-  {
-    "objectID": "content/resources/network-analysis.html#papers",
-    "href": "content/resources/network-analysis.html#papers",
-    "title": "Network Analysis Resources",
-    "section": "Papers",
-    "text": "Papers\n\nPass"
-  },
-  {
-    "objectID": "content/resources/network-analysis.html#projects",
-    "href": "content/resources/network-analysis.html#projects",
-    "title": "Network Analysis Resources",
-    "section": "Projects",
-    "text": "Projects\n\nPass"
-  },
-  {
     "objectID": "cv.html",
     "href": "cv.html",
     "title": "Curriculum Vitae",
@@ -96,19 +54,5 @@
     "title": "Tue Nguyen",
     "section": "",
     "text": "My name is Tue, and I am currently a master’s student in Data Science for Economics at the University of Milan in Italy. This program allows me to expand my knowledge in both theoretical aspects, such as mathematics, statistical theory, and econometrics, as well as practical applications like big data analytics and applied machine learning. Prior to this, I obtained my bachelor’s degree in Finance-Banking from Tan Tao University in Vietnam, where I gained a strong foundation in finance and quantitative analysis.\nI am passionate about data science and have had the opportunity to work in various roles in this field over the last five year of my professional experience, including Business Intelligence Engineer at Amazon, Data Scientist and Research Engineer at Trusting Social, and Data Specialist at Sentifi AG. These experiences have allowed me to apply theoretical concepts in practical settings, gaining insights into how data science drives decision-making across different industries and data applications. From developing predictive models, conducting dive-deep analyses, to creating data visualization dashboards, I’ve been involved in diverse projects that have sharpened not only my technical skills but also my business acumen.\nI consider myself a curious learner who enjoys exploring new concepts, methodologies, and technologies in the data science realm. My analytical approach to problem-solving, combined with my multidisciplinary background, enables me to tackle complex challenges from multiple angles. I am particularly interested in the intersection of data science and economics, where I can leverage my knowledge in both fields to make a positive impact on society."
-  },
-  {
-    "objectID": "content/resources/index.html",
-    "href": "content/resources/index.html",
-    "title": "Resources",
-    "section": "",
-    "text": "Data Science\nNetwork Analysis\nProbability and Statistics"
-  },
-  {
-    "objectID": "content/blog/example-post.html",
-    "href": "content/blog/example-post.html",
-    "title": "Example post",
-    "section": "",
-    "text": "An example post."
   }
 ]

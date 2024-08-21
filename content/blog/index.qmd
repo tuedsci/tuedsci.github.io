@@ -1,9 +1,0 @@
----
-title: Blog
-listing:
-  contents: "*.qmd"
-  type: default
-  sort: date desc
----
-
-Welcome to my blog. It's currently underconstruction unfortunately.

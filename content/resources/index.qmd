@@ -1,7 +1,0 @@
----
-title: Resources
----
-
-- [Data Science](/content/resources/data-science.qmd)
-- [Network Analysis](/content/resources/network-analysis.qmd)
-- [Probability and Statistics](/content/resources/probability-statistics.qmd)

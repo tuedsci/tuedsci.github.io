@@ -1,35 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tuedsci.github.io/content/blog/index.html</loc>
-    <lastmod>2024-08-18T20:58:14.103Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tuedsci.github.io/content/resources/network-analysis.html</loc>
-    <lastmod>2024-08-18T20:58:14.103Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tuedsci.github.io/content/resources/data-science.html</loc>
-    <lastmod>2024-08-18T20:58:14.103Z</lastmod>
-  </url>
-  <url>
     <loc>https://tuedsci.github.io/cv.html</loc>
-    <lastmod>2024-08-18T20:58:14.103Z</lastmod>
+    <lastmod>2024-08-21T22:11:47.829Z</lastmod>
   </url>
   <url>
     <loc>https://tuedsci.github.io/index.html</loc>
-    <lastmod>2024-08-18T20:58:14.103Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tuedsci.github.io/content/resources/probability-statistics.html</loc>
-    <lastmod>2024-08-18T20:58:14.103Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tuedsci.github.io/content/resources/index.html</loc>
-    <lastmod>2024-08-18T20:58:14.103Z</lastmod>
-  </url>
-  <url>
-    <loc>https://tuedsci.github.io/content/blog/example-post.html</loc>
-    <lastmod>2024-08-18T20:58:14.099Z</lastmod>
+    <lastmod>2024-08-21T22:11:47.829Z</lastmod>
   </url>
 </urlset>
