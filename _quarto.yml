@@ -18,7 +18,6 @@ format:
     css: assets/css/styles.css
     toc: true
     toc-location: right
-    # page-layout: article
     toc-title: On this page
     link-external-newwindow: true
 resources:
