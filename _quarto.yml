@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: _site
 website:
-  title: Tue Nguyen
+  title: "Tue Nguyen"
   navbar:
     left:
       - href: index.qmd
@@ -13,12 +13,13 @@ format:
   html:
     smooth-scroll: true
     theme: 
-      dark: superhero
-      light: lumen
+      dark: [darkly, assets/scss/style-dark.scss]
+      light: [flatly, assets/scss/style-light.scss]
     css: assets/css/styles.css
     toc: true
     toc-location: right
-    page-layout: article
+    # page-layout: article
+    toc-title: On this page
     link-external-newwindow: true
 resources:
   - content/**

@@ -6,8 +6,6 @@ Tue NGUYEN | <tuedsci@gmail.com> | <https://www.linkedin.com/in/tuedsci> | Milan
 
 ## Education
 
----
-
 **MSc in Data Science for Economics** --- University of Milan, Italy [2022 --- 2024]{.cv-date}<br>
 with the Excellence Scholarship and GPA of 30 / 30<br>
 
@@ -16,8 +14,6 @@ with the TTU-ITA Excellence Scholarship and GPA of 3.82 / 4.0<br>
 
 ## Experience
 
----
-
 **Business Intelligence Engineer Intern** --- Amazon, Italy [2023 -- 2024]{.cv-date}<br>
 **Junior Data Scientist** --- Trusting Social, Vietnam [2020 -- 2021]{.cv-date}<br>
 **Research Engineer** --- Trusting Social, Vietnam [2017 -- 2019]{.cv-date}<br>
@@ -25,17 +21,13 @@ with the TTU-ITA Excellence Scholarship and GPA of 3.82 / 4.0<br>
 
 ## Skills
 
----
-
 **Programming** --- Python, R, Matlab, Octave<br>
-**Data Engineering** --- ELT, Automation, Spark, SQL (PostgreSQL, MariaDB, Redshift), NoSQL (MongoDB)<br>
+**Data Engineering** --- ETL, Automation, Spark, SQL (PostgreSQL, MariaDB, Redshift), NoSQL (MongoDB)<br>
 **Data science** --- Machine Learning, Big Data Wrangling, Exploratory Analysis, Visualization<br>
-**BI & Cloud** --- QuickSight, Tableau, S3, Lambda, Cloud9<br>
+**BI & Cloud** --- QuickSight, Tableau, Power BI, AWS Lambda, S3, Cloud9<br>
 **Other** --- Git, CLI, HTML, CSS, Latex, Markdown, Technical Documentation<br>
 
 ## Awards
-
----
 
 **Excellence Scholarship** --- by the University of Milan [2022 -- 2024]{.cv-date}<br>
 **Erasmus Mundus Scholarship (QEM)** --- by the European Commission [2021]{.cv-date}<br>
@@ -44,14 +36,10 @@ with the TTU-ITA Excellence Scholarship and GPA of 3.82 / 4.0<br>
 
 ## Languages
 
----
-
 **Vietnamese** --- Native<br>
 **English** --- Fluent (C1 level)<br>
 
 ## Certificates
-
----
 
 **IELTS Academic** --- scored 7.5<br>
 **GRE General** --- scored 320 (165Q, 155V)<br>

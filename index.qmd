@@ -3,6 +3,9 @@ image: /assets/img/portrait.jpg
 about:
   template: jolla
   links:
+    - icon: globe
+      text: Website
+      href: https://tuedsci.github.io/
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/tuedsci/
