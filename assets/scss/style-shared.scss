@@ -1,0 +1,72 @@
+/* Sidebar */
+.sidebar-navigation {
+  font-size: 0.9rem;
+}
+
+/* TOC */
+#TOC {
+  font-size: 0.9rem;
+}
+
+/* Tables */
+table {
+  font-size: 0.9rem;
+  width: auto !important;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;
+
+  th,
+  td {
+    padding: 0.1rem;
+  }
+}
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+  border-color: #3c3d3e !important;
+}
+
+table,
+table.table {
+  margin-bottom: 2rem !important;
+  border-top-color: #3c3d3e !important;
+}
+
+/* Code */
+.cell {
+  border: none;
+  margin-bottom: 2rem !important;
+}
+
+.sourceCode.cell-code {
+  border: 1px solid #e0e0e0;
+  margin: 0;
+  border-radius: 0.2rem;
+}
+
+.cell-output {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.cell-output pre {
+  margin: 0;
+  code {
+    padding: 10px 0;
+  }
+}
+
+.cell-output table {
+  margin: 0 !important;
+}
+
+/* CV */
+.cv-date {
+  float: right;
+}
