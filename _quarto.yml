@@ -3,12 +3,13 @@ project:
   output-dir: _site
 website:
   title: "Tue Nguyen"
+  search: true
   navbar:
-    left:
+    right:
       - href: index.qmd
         text: About
-      - href: cv.qmd
-        text: CV
+      - href: resume.qmd
+        text: Resume
 format:
   html:
     smooth-scroll: true

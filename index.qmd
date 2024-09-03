@@ -1,7 +1,9 @@
 ---
-image: /assets/img/portrait.jpg
+title: Tue Nguyen
+page-layout: full
 about:
-  template: jolla
+  template: trestles
+  image: /assets/img/portrait.png
   links:
     - icon: globe
       text: Website

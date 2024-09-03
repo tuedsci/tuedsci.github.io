@@ -1,5 +1,5 @@
 ---
-title: "Curriculum Vitae"
+title: Resume
 ---
 
 Tue NGUYEN | <tuedsci@gmail.com> | <https://www.linkedin.com/in/tuedsci> | Milan, Italy<br><br>
