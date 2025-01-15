@@ -2,15 +2,35 @@
 @import "style-shared";
 
 /* Navbar */
-$navbar-bg: #2c3e50;
+$navbar-bg: #2d303c;
 
 /* General */
-// $body-bg: #14181e;
+$body-bg: #282a36;
 $body-color: #ced6dd;
 $link-color: #528fe4;
-$font-size-base: 1rem;
+$font-size-base: 1.1rem;
 
 /* Code */
 $code-block-bg: #29313d;
 $code-bg: #29313d;
 $code-color: #f3c7ee;
+
+/* HEADING */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Lato, sans-serif;
+  font-weight: 400 !important;
+  margin-bottom: 0.5rem !important;
+  //   line-height: 1.25 !important;
+  color: #98a6ad !important;
+  text-rendering: optimizeLegibility !important;
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
+  word-break: break-word !important;
+  hyphens: manual !important;
+  border-bottom: 0 !important;
+}

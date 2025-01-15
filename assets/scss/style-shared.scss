@@ -1,3 +1,5 @@
+/* Body */
+
 /* Sidebar */
 .sidebar-navigation {
   font-size: 0.9rem;
@@ -69,4 +71,9 @@ table.table {
 /* CV */
 .cv-date {
   float: right;
+}
+
+/* About */
+.quarto-about-trestles .about-contents {
+  border-left: 0 !important;
 }
